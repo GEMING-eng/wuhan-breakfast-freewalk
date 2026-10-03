@@ -1,0 +1,44 @@
+[
+  {
+    "name": "keeper-closed",
+    "reference": "keeper.png",
+    "transparent": true,
+    "prompt": "Edit the attached character as a precisely registered animation frame. Same 1024 x 1536 transparent canvas. Change ONLY the lips and inside of the mouth to lips gently closed together, warm small smile, a closed M syllable. Preserve every other pixel as closely as possible, exact same head position, angle, eye position, eyes open, nose, ears, hairstyle, cheek and jaw shape, body, pose, chopsticks, clothes, paper edge, gouache pigment texture and lighting. Do not move or resize the mouth region. Mouth center is (580,365) pixels approximately. Do not change anything outside a small area immediately around the mouth. No backdrop, text, new object, head movement or body movement. One single full-body image, not a sprite sheet. Match the source texture perfectly to support clean local mouth blending.",
+    "source": "C:\\Users\\zhudo\\.codex\\generated_images\\01a0b1d7-c6f3-7ff1-9f36-c7ab39f15773\\exec-3b7dab14-e761-48ba-9fc6-f4fa35f295d1.png"
+  },
+  {
+    "name": "keeper-ee",
+    "reference": "keeper.png",
+    "transparent": true,
+    "prompt": "Edit the attached character as a precisely registered animation frame. Same 1024 x 1536 transparent canvas. Change ONLY the lips and inside of the mouth to small narrow opening between lips showing a thin row of teeth, relaxed speaking EE syllable. Preserve every other pixel as closely as possible, exact same head position, angle, eye position, eyes open, nose, ears, hairstyle, cheek and jaw shape, body, pose, chopsticks, clothes, paper edge, gouache pigment texture and lighting. Do not move or resize the mouth region. Mouth center is (580,365) pixels approximately. Do not change anything outside a small area immediately around the mouth. No backdrop, text, new object, head movement or body movement. One single full-body image, not a sprite sheet. Match the source texture perfectly to support clean local mouth blending.",
+    "source": "C:\\Users\\zhudo\\.codex\\generated_images\\01a0b1d7-c6f3-7ff1-9f36-c7ab39f15773\\exec-22540d90-37cc-4645-a893-31dc09af79de.png"
+  },
+  {
+    "name": "keeper-oh",
+    "reference": "keeper.png",
+    "transparent": true,
+    "prompt": "Edit the attached character as a precisely registered animation frame. Same 1024 x 1536 transparent canvas. Change ONLY the lips and inside of the mouth to small rounded O mouth with dark opening, speaking softly, no exaggerated expression. Preserve every other pixel as closely as possible, exact same head position, angle, eye position, eyes open, nose, ears, hairstyle, cheek and jaw shape, body, pose, chopsticks, clothes, paper edge, gouache pigment texture and lighting. Do not move or resize the mouth region. Mouth center is (580,365) pixels approximately. Do not change anything outside a small area immediately around the mouth. No backdrop, text, new object, head movement or body movement. One single full-body image, not a sprite sheet. Match the source texture perfectly to support clean local mouth blending.",
+    "source": "C:\\Users\\zhudo\\.codex\\generated_images\\01a0b1d7-c6f3-7ff1-9f36-c7ab39f15773\\exec-47adb144-1ba1-44b3-ab15-14034b7545e3.png"
+  },
+  {
+    "name": "successor-closed",
+    "reference": "successor.png",
+    "transparent": true,
+    "prompt": "Edit the attached character as a precisely registered animation frame. Same 1024 x 1536 transparent canvas. Change ONLY the lips and inside of the mouth to lips gently closed together, warm small smile, a closed M syllable. Preserve every other pixel as closely as possible, exact same head position, angle, eye position, eyes open, nose, ears, hairstyle, cheek and jaw shape, body, pose, chopsticks, clothes, paper edge, gouache pigment texture and lighting. Do not move or resize the mouth region. Mouth center is (618,337) pixels approximately. Do not change anything outside a small area immediately around the mouth. No backdrop, text, new object, head movement or body movement. One single full-body image, not a sprite sheet. Match the source texture perfectly to support clean local mouth blending.",
+    "source": "C:\\Users\\zhudo\\.codex\\generated_images\\01a0b1d7-c6f3-7ff1-9f36-c7ab39f15773\\exec-b3048905-8ae7-470d-a9d8-06d87983ef3a.png"
+  },
+  {
+    "name": "successor-ee",
+    "reference": "successor.png",
+    "transparent": true,
+    "prompt": "Edit the attached character as a precisely registered animation frame. Same 1024 x 1536 transparent canvas. Change ONLY the lips and inside of the mouth to small narrow opening between lips showing a thin row of teeth, relaxed speaking EE syllable. Preserve every other pixel as closely as possible, exact same head position, angle, eye position, eyes open, nose, ears, hairstyle, cheek and jaw shape, body, pose, chopsticks, clothes, paper edge, gouache pigment texture and lighting. Do not move or resize the mouth region. Mouth center is (618,337) pixels approximately. Do not change anything outside a small area immediately around the mouth. No backdrop, text, new object, head movement or body movement. One single full-body image, not a sprite sheet. Match the source texture perfectly to support clean local mouth blending.",
+    "source": "C:\\Users\\zhudo\\.codex\\generated_images\\01a0b1d7-c6f3-7ff1-9f36-c7ab39f15773\\exec-642c4c6a-5744-415f-b11e-4e65dbc870f8.png"
+  },
+  {
+    "name": "successor-oh",
+    "reference": "successor.png",
+    "transparent": true,
+    "prompt": "Edit the attached character as a precisely registered animation frame. Same 1024 x 1536 transparent canvas. Change ONLY the lips and inside of the mouth to small rounded O mouth with dark opening, speaking softly, no exaggerated expression. Preserve every other pixel as closely as possible, exact same head position, angle, eye position, eyes open, nose, ears, hairstyle, cheek and jaw shape, body, pose, chopsticks, clothes, paper edge, gouache pigment texture and lighting. Do not move or resize the mouth region. Mouth center is (618,337) pixels approximately. Do not change anything outside a small area immediately around the mouth. No backdrop, text, new object, head movement or body movement. One single full-body image, not a sprite sheet. Match the source texture perfectly to support clean local mouth blending.",
+    "source": "C:\\Users\\zhudo\\.codex\\generated_images\\01a0b1d7-c6f3-7ff1-9f36-c7ab39f15773\\exec-af46b414-da3b-4e43-ad18-3dfe7504b227.png"
+  }
+]

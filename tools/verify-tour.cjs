@@ -1,0 +1,45 @@
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const fs=require('node:fs'),path=require('node:path');
+const out=path.resolve('docs/street/verification-tour');fs.mkdirSync(out,{recursive:true});
+(async()=>{
+ const browser=await chromium.launch({headless:true,executablePath:process.env.CHROMIUM_PATH,args:['--enable-webgl','--use-angle=d3d11']});
+ const p=await browser.newPage({viewport:{width:1440,height:960},acceptDownloads:true});p.setDefaultTimeout(90000);
+ const report={date:'2026-10-03',checks:[],errors:[]};const check=(name,passed,data={})=>{report.checks.push({name,passed,...data});console.log(name,passed,data);};
+ p.on('pageerror',e=>report.errors.push(e.message));p.on('console',m=>{if(m.type()==='error')report.errors.push(m.text());});p.on('response',r=>{if(r.status()>=400)report.errors.push(r.status()+' '+r.url());});
+ const stage=p.locator('.tour-canvas');const ready=()=>p.waitForFunction(()=>document.querySelector('.tour-canvas')?.dataset.status==='ready');
+ const arrived=async()=>{await p.waitForFunction(()=>{const scene=document.querySelector('.tour-canvas'),main=document.querySelector('main');return scene?.dataset.walking==='false'&&scene.dataset.turning!=='true'&&scene.dataset.walkStop===main?.dataset.tourStop&&!!document.querySelector('.tour-reading');});await p.waitForTimeout(100);};
+ const shot=name=>p.screenshot({path:path.join(out,name+'.png'),fullPage:true});
+ const next=()=>p.locator('.tour-reading-actions .tour-primary').click();
+ try{
+  await p.goto('http://127.0.0.1:4173/?sample=tour&v=6');await ready();await shot('01-arrival');
+  check('first-person-eye-level',await stage.getAttribute('data-eye-height')==='2.450');
+  await p.getByRole('button',{name:/走进早市/}).click();await arrived();await shot('02-gate');
+  const position=await stage.getAttribute('data-camera-position'),target=await stage.getAttribute('data-camera-target');await p.mouse.move(470,330);await p.mouse.down();await p.mouse.move(690,330,{steps:8});await p.mouse.up();await p.waitForTimeout(180);
+  check('look-around-turns-head-without-orbiting',position===await stage.getAttribute('data-camera-position')&&target!==await stage.getAttribute('data-camera-target'));
+  await next();await next();await p.waitForFunction(()=>document.querySelector('.tour-canvas').dataset.walking==='true');
+  const positions=await stage.evaluate(el=>new Promise(resolve=>{const result=[];let n=0;const timer=setInterval(()=>{result.push(el.dataset.cameraPosition);if(++n===12){clearInterval(timer);resolve(result);}},120);}));
+  check('walking-moves-at-ground-level',new Set(positions).size>3&&positions.every(x=>Math.abs(+x.split(',')[1]-2.45)<.001),{samples:positions});await shot('03-walking');await arrived();await shot('04-breakfast');
+  await p.getByRole('button',{name:'查看这一页的出处 ↗'}).click();check('page-specific-primary-source-visible',await p.locator('dialog a[href*="ihchina.cn"]').count()===1);await p.keyboard.press('Escape');
+  await next();await next();await arrived();await shot('05-noodle');await next();check('food-must-be-recorded',await p.locator('.tour-reading-actions .tour-primary').isDisabled());await p.getByRole('button',{name:/记下这碗热干面/}).click();await next();await arrived();await shot('06-craft');
+  await next();await next();await arrived();await shot('07-eras-past');check('comparison-is-deliberate',await p.locator('.tour-reading-actions .tour-primary').isDisabled());
+  const pastPaper=await p.locator('.tour-reading').evaluate(e=>getComputedStyle(e).backgroundColor);
+  await p.locator('.tour-era-control').getByRole('button',{name:'今日',exact:true}).click();await p.waitForFunction(()=>{const a=+document.querySelector('.tour-canvas').dataset.wallAngle;return a>10&&a<170;},null,{polling:16});await shot('08-eras-turn');await arrived();await shot('09-eras-present');check('comparison-unlocks-after-real-transition',await p.locator('.tour-reading-actions .tour-primary').isEnabled()&&await stage.getAttribute('data-wall-angle')==='180.0');
+  check('tour-stationery-changes-with-era',pastPaper!==await p.locator('.tour-reading').evaluate(e=>getComputedStyle(e).backgroundColor));
+  await next();await next();await arrived();await shot('10-menu');await p.locator('.tour-food-list').getByRole('button',{name:/三鲜豆皮/}).click();await p.locator('.tour-food-list').getByRole('button',{name:/面窝/}).click();check('three-food-notes-recorded',await p.locator('.tour-pocket b').innerText()==='3 味');
+  await p.reload();await ready();check('resume-offered',await p.getByRole('button',{name:/接着上次的脚步/}).isVisible());await p.getByRole('button',{name:/接着上次的脚步/}).click();await arrived();check('resume-keeps-stop-food-and-era',await p.locator('main').getAttribute('data-tour-stop')==='menu'&&await p.locator('.tour-pocket b').innerText()==='3 味'&&await p.locator('main').getAttribute('data-era')==='present');
+  await next();await next();await arrived();await shot('11-neighbors');await next();await next();await arrived();await shot('12-ending');check('memory-choice-required',await p.locator('.tour-reading-actions .tour-primary').isDisabled());await p.getByRole('button',{name:/手上的分寸/}).click();await next();await shot('13-journal');check('full-route-reaches-journal',await p.locator('main').getAttribute('data-tour-phase')==='journal');
+  const download= p.waitForEvent('download');await p.getByRole('button',{name:/保存我的过早手册/}).click();const file=await download;await file.saveAs(path.join(out,'tour-journal.md'));check('journal-export-has-memory-and-sources',fs.readFileSync(path.join(out,'tour-journal.md'),'utf8').includes('手上的分寸')&&fs.readFileSync(path.join(out,'tour-journal.md'),'utf8').includes('ihchina.cn'));
+  await p.reload();await ready();await p.getByRole('button',{name:/打开我的过早记忆/}).click();check('completed-journal-restores',await p.locator('.tour-journal h1').innerText()==='手上的分寸');
+  await p.setViewportSize({width:390,height:844});await p.waitForTimeout(250);await shot('14-mobile-journal');check('mobile-journal-fits',await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  await p.getByRole('button',{name:'再走一遍',exact:true}).click();await arrived();await shot('15-mobile-gate');
+  await p.getByRole('button',{name:'减少动态',exact:true}).click();await next();await next();await arrived();await shot('16-mobile-breakfast');check('reduced-motion-has-no-walking-wait',await stage.getAttribute('data-motion')==='off'&&await stage.getAttribute('data-walking')==='false');
+  await next();await next();await arrived();await shot('17-mobile-noodle');
+  check('mobile-noodle-camera-at-actual-stop',await stage.getAttribute('data-walk-stop')==='noodle'&&await stage.getAttribute('data-camera-position')==='-3.450,2.450,5.700');
+  check('mobile-reading-actions-visible',await p.locator('.tour-reading-actions').evaluate(e=>{const r=e.getBoundingClientRect();return r.top>0&&r.bottom<innerHeight;}));
+  await p.getByRole('button',{name:'资料手册',exact:true}).click();check('mobile-sources-accessible',await p.locator('dialog').isVisible());await shot('18-mobile-sources');await p.keyboard.press('Escape');
+  await next();await p.getByRole('button',{name:/记下这碗热干面/}).click();await next();await arrived();await next();await next();await arrived();await shot('19-mobile-eras-past');
+  await p.locator('.tour-era-control').getByRole('button',{name:'今日',exact:true}).click();await arrived();await shot('20-mobile-eras-present');check('mobile-era-control-and-turn-work',await p.locator('main').getAttribute('data-era')==='present'&&await stage.getAttribute('data-wall-angle')==='180.0');
+  await p.setViewportSize({width:320,height:740});await shot('21-small-mobile');check('small-mobile-no-horizontal-overflow',await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ }catch(e){report.errors.push(e.stack);console.error(e);await shot('failure').catch(()=>{});}
+ finally{fs.writeFileSync(path.join(out,'report.json'),JSON.stringify(report,null,2));await browser.close();}console.log(JSON.stringify(report,null,2));if(report.errors.length||report.checks.some(c=>!c.passed))process.exitCode=1;
+})();

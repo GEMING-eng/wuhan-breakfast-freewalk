@@ -1,0 +1,188 @@
+[
+  {
+    "path": "public/assets/audio/ambient-past.wav",
+    "bytes": 1323044,
+    "sha256": "f45f905f3021270dbb43dc10bcb706d34b092fb2e95baec1af74faab1f447f44",
+    "dimensions": null,
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/assets/audio/ambient-present.wav",
+    "bytes": 1323044,
+    "sha256": "d1651cc5562f60efb87cd349b02e2fe9cf421a50a48af0034a5edc07c79319a5",
+    "dimensions": null,
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/assets/audio/choice.wav",
+    "bytes": 7982,
+    "sha256": "c2d129c257b6ed8e37051a1f072748db04b4a3b5c6cd8b80024cdd65eba53cd1",
+    "dimensions": null,
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/assets/audio/paper.wav",
+    "bytes": 22094,
+    "sha256": "9ac0236034d52c3491ddedc616d1569319008e1f28e4a262d062b6723be71a1d",
+    "dimensions": null,
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/assets/characters/chen-neutral.svg",
+    "bytes": 3459,
+    "sha256": "80adfa4a4a0f9961e4938766a0fb1b36f17e703c001b5f13b427004bc61e9c98",
+    "dimensions": [
+      500.0,
+      750.0
+    ],
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/assets/characters/chen-warm.svg",
+    "bytes": 3459,
+    "sha256": "22163c7ef9c5afe3123e3b271744711940eec71421c4e4652b3db7f5376fd2cd",
+    "dimensions": [
+      500.0,
+      750.0
+    ],
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/assets/characters/lin-neutral.svg",
+    "bytes": 3653,
+    "sha256": "70cb01e18f7624273f11af93ff73b9ae6ab1d7be46eaf2d8792e809555f55c47",
+    "dimensions": [
+      500.0,
+      750.0
+    ],
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/assets/characters/lin-warm.svg",
+    "bytes": 3653,
+    "sha256": "31d9d6d80badc6a0439a57af36b4ecdf9ed63fda77304a4b82372792c9f75441",
+    "dimensions": [
+      500.0,
+      750.0
+    ],
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/assets/characters/zhou-neutral.svg",
+    "bytes": 3569,
+    "sha256": "5b0c04bd46f81dcd1c113a698b00b9c4f94982cb61f39b792d1b06070910a369",
+    "dimensions": [
+      500.0,
+      750.0
+    ],
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/assets/characters/zhou-thought.svg",
+    "bytes": 3559,
+    "sha256": "154287a37984ccc6f114bb6179485dd8053881d092c4510721cc67f91db0807f",
+    "dimensions": [
+      500.0,
+      750.0
+    ],
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/assets/objects/doupi.svg",
+    "bytes": 8194,
+    "sha256": "d80df25b410be73afb3852a6dc9777c83037e7e250229a9b09c5f8a220f6ba0c",
+    "dimensions": [
+      500.0,
+      500.0
+    ],
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/assets/objects/mianwo.svg",
+    "bytes": 2368,
+    "sha256": "fb74656270bfd263bde32ba353aed4b8df53666dac630697e88aa834f5af0065",
+    "dimensions": [
+      500.0,
+      500.0
+    ],
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/assets/objects/noodle.svg",
+    "bytes": 3250,
+    "sha256": "034c0b58ae42b12b1c188c2a6a973f27eaa436621fb0ab61492e5481302987d9",
+    "dimensions": [
+      500.0,
+      500.0
+    ],
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/assets/objects/saucejar.svg",
+    "bytes": 1103,
+    "sha256": "29c5c50b047a5d075cd2728bfc077684c211ce55cea013c2b194c919bdc3e4e4",
+    "dimensions": [
+      500.0,
+      500.0
+    ],
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/assets/objects/spatula.svg",
+    "bytes": 962,
+    "sha256": "dcf84d7ec66362fb39d4020e4a1906fc2b8c3df4c013acd2bce43efecc3b4530",
+    "dimensions": [
+      500.0,
+      500.0
+    ],
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/assets/objects/stool.svg",
+    "bytes": 1101,
+    "sha256": "7c858fbd85f451a61ae62a7b94119671fc1e8ad203956299749ff8c446b6d28b",
+    "dimensions": [
+      500.0,
+      500.0
+    ],
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/assets/scenes/photo-front.png",
+    "bytes": 216669,
+    "sha256": "0889d385f34b3198e9434da4c7fe9ea6cc521e3148da3d46995c611c33d2c04c",
+    "dimensions": [
+      960,
+      540
+    ],
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-art-and-sound"
+  },
+  {
+    "path": "public/favicon.svg",
+    "bytes": 264,
+    "sha256": "16aaf933198c40c3cee15605745df0bf5b7c12a874bcc49883f7a94e9f6adf52",
+    "dimensions": [
+      64.0,
+      64.0
+    ],
+    "production": "v1.1-original-paper-stage",
+    "license": "original-project-vector"
+  }
+]

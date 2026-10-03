@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-03",
+  "checks": [
+    {
+      "name": "illustrated-cover-ready",
+      "passed": true
+    },
+    {
+      "name": "all-six-free-choice-map-pins-visible",
+      "passed": true
+    },
+    {
+      "name": "map-hotspots-not-covered",
+      "passed": true,
+      "hits": [
+        {
+          "name": "noodle",
+          "reachable": true,
+          "x": 493.80902099609375,
+          "y": 506.9407958984375
+        },
+        {
+          "name": "doupi",
+          "reachable": true,
+          "x": 725.3598022460938,
+          "y": 561.5144653320312
+        },
+        {
+          "name": "mianwo",
+          "reachable": true,
+          "x": 633.7806396484375,
+          "y": 400.6607971191406
+        },
+        {
+          "name": "market",
+          "reachable": true,
+          "x": 381.9996643066406,
+          "y": 613.2040405273438
+        },
+        {
+          "name": "neighbors",
+          "reachable": true,
+          "x": 784.1634521484375,
+          "y": 267.29473876953125
+        },
+        {
+          "name": "courtyard",
+          "reachable": true,
+          "x": 920.7308959960938,
+          "y": 262.9239196777344
+        }
+      ]
+    },
+    {
+      "name": "eighteen-paper-visitors-and-three-food-counters",
+      "passed": true
+    },
+    {
+      "name": "basket-starts-empty",
+      "passed": true
+    },
+    {
+      "name": "selected-shop-walk-is-first-person",
+      "passed": true,
+      "movement": [
+        "0.375,2.450,20.000",
+        "0.332,2.450,20.000",
+        "0.273,2.450,20.000",
+        "0.190,2.450,20.000",
+        "0.113,2.450,20.000",
+        "0.000,2.450,19.999",
+        "0.000,2.450,19.859",
+        "0.000,2.450,19.706"
+      ]
+    },
+    {
+      "name": "mianwo-can-be-visited-first",
+      "passed": true
+    },
+    {
+      "name": "food-enters-left-basket",
+      "passed": true
+    },
+    {
+      "name": "no-duplicate-food",
+      "passed": true
+    },
+    {
+      "name": "food-page-has-specific-source",
+      "passed": true
+    },
+    {
+      "name": "all-three-foods-can-be-saved-in-any-order",
+      "passed": true
+    },
+    {
+      "name": "basket-removal-works",
+      "passed": true
+    },
+    {
+      "name": "era-turn-and-rounded-ui-preserved",
+      "passed": true
+    },
+    {
+      "name": "story-can-be-closed-without-moving-on",
+      "passed": true
+    },
+    {
+      "name": "basket-download-has-only-selected-food",
+      "passed": true
+    },
+    {
+      "name": "basket-survives-refresh",
+      "passed": true
+    },
+    {
+      "name": "mobile-all-pins-reachable",
+      "passed": true,
+      "mobileHits": [
+        {
+          "name": "noodle",
+          "visible": true,
+          "reachable": true
+        },
+        {
+          "name": "doupi",
+          "visible": true,
+          "reachable": true
+        },
+        {
+          "name": "mianwo",
+          "visible": true,
+          "reachable": true
+        },
+        {
+          "name": "market",
+          "visible": true,
+          "reachable": true
+        },
+        {
+          "name": "neighbors",
+          "visible": true,
+          "reachable": true
+        },
+        {
+          "name": "courtyard",
+          "visible": true,
+          "reachable": true
+        }
+      ]
+    },
+    {
+      "name": "mobile-reading-and-actions-fit",
+      "passed": true
+    },
+    {
+      "name": "mobile-basket-accessible",
+      "passed": true
+    },
+    {
+      "name": "mobile-can-add-after-removing",
+      "passed": true
+    },
+    {
+      "name": "small-cover-fits",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

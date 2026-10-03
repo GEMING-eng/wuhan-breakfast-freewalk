@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-03",
+  "url": "http://127.0.0.1:4173/?sample=street",
+  "checks": [
+    {
+      "name": "surroundings-and-five-reserved-plots-load",
+      "passed": true
+    },
+    {
+      "name": "pedestrians-move",
+      "passed": true
+    },
+    {
+      "name": "ambient-motion-pauses",
+      "passed": true
+    },
+    {
+      "name": "dawn-changes-rendered-light",
+      "passed": true,
+      "changedPixels": 543079
+    },
+    {
+      "name": "five-camera-routes-reach-different-targets",
+      "passed": true
+    },
+    {
+      "name": "six-plots-listed",
+      "passed": true
+    },
+    {
+      "name": "reserved-plot-can-be-inspected",
+      "passed": true
+    },
+    {
+      "name": "enter-shop-follows-subject",
+      "passed": true
+    },
+    {
+      "name": "closeup-bowl",
+      "passed": true
+    },
+    {
+      "name": "closeup-jar",
+      "passed": true
+    },
+    {
+      "name": "closeup-stool",
+      "passed": true
+    },
+    {
+      "name": "bowl-steam-actually-animates",
+      "passed": true
+    },
+    {
+      "name": "bowl-clearance-positive",
+      "passed": true
+    },
+    {
+      "name": "wall-turn-visible-while-ambient-paused",
+      "passed": true
+    },
+    {
+      "name": "walls-and-interface-switch-together",
+      "passed": true
+    },
+    {
+      "name": "five-mouth-poses-and-blink",
+      "passed": true,
+      "poses": [
+        "3",
+        "2",
+        "0",
+        "1",
+        "4"
+      ],
+      "blinks": [
+        "false",
+        "true"
+      ]
+    },
+    {
+      "name": "rapid-era-reversal-settles",
+      "passed": true
+    },
+    {
+      "name": "mobile-no-horizontal-overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile-bowl-focus",
+      "passed": true
+    },
+    {
+      "name": "handbook-opens",
+      "passed": true
+    },
+    {
+      "name": "reduced-motion-respected",
+      "passed": true
+    },
+    {
+      "name": "standalone-shop-preserved",
+      "passed": true
+    },
+    {
+      "name": "original-story-preserved",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "initial": {
+    "motion": "on",
+    "dawn": "0.36",
+    "sunHeight": "18.68",
+    "bowlClearance": "0.0040",
+    "reservedPlots": "5",
+    "streetPeople": "18",
+    "streetView": "entry",
+    "streetAssets": "10",
+    "foodCounters": "1",
+    "pavingWear": "380",
+    "era": "past",
+    "streetMoment": "",
+    "cameraSettled": "true",
+    "focus": "welcome",
+    "portraitFrame": "0",
+    "blink": "false",
+    "speaking": "false",
+    "wallAngle": "0.0",
+    "wallAngles": "0.0,0.0,0.0,0.0",
+    "steamTime": "2.69",
+    "streetTurn": "0.000",
+    "pedestrianZ": "9.151",
+    "streetTime": "2.69",
+    "drawCalls": "2579",
+    "triangles": "1821081",
+    "layers": "8",
+    "status": "ready",
+    "cameraDistance": "42.119",
+    "cameraTarget": "-4.00,4.00,-3.00",
+    "cameraPosition": "14.000,19.000,32.000"
+  },
+  "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5060 Laptop GPU (0x00002D59) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "renderRate": {
+    "frames": 88,
+    "seconds": 3.213300000011921,
+    "scope": "desktop Chromium D3D11"
+  }
+}

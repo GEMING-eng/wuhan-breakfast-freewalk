@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-03",
+  "tool": "built-in image_gen",
+  "reference": "docs/street/style-reference.jpg (style only)",
+  "assets": [
+    {
+      "file": "public/assets/storybook/cover-v7.png",
+      "prompt": "Use case: illustration-story. Create a polished wide landscape website cover illustration for a Wuhan breakfast old-street interactive illustrated paper diorama. The attached image is a STYLE REFERENCE ONLY: delicate warm-gray ink outlines, flat pastel watercolor, abundant lived-in cutaway architecture and tiny people, handcrafted picture-book appeal. Original new composition, not copying this building or signs. Composition: panoramic 16:9, warm ivory paper negative space in the leftmost 36 percent with only very faint morning branches; the right two thirds show a charming dense Wuhan-inspired old breakfast lane in slightly elevated three-quarter view, linked two-story timber and pale blue plaster houses, gray tiled roofs, bamboo awnings, open breakfast counters, steaming sesame noodles in a blue porcelain bowl near the foreground, golden doupi pieces and a wok at another small stall, bicycles, stools, laundry, potted greenery and about twelve small friendly townspeople shopping and strolling. Dawn gold light from upper right, long fine tree shadows on damp stone paving; peaceful, lively, believable everyday life. Muted sage, peach, indigo-gray and ochre with selective vermilion accents, subtle paper grain. The picture should read as a sophisticated hand-drawn travel picture-book, not photographic or glossy 3D, no large fake UI panels. Leave all shop plaques blank; absolutely no lettering, no logos, no numbers, no phone UI or frame. Keep the upper-left and lower-left clear for real website typography. Full image opaque cream paper background, very high craft detail, distinct silhouettes and lovely coherent line work."
+    }
+  ],
+  "notes": "Original illustrative scenery, not an archival photograph or a historical reconstruction. Labels, buttons and reading UI are real HTML. Stall characters are painted into background art; original Linji mouth and blink animation remains separate."
+}

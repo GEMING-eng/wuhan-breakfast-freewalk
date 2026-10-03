@@ -1,0 +1,107 @@
+{
+  "url": "http://127.0.0.1:4173/?sample=noodle",
+  "checks": [
+    {
+      "name": "camera-bowl",
+      "passed": true
+    },
+    {
+      "name": "camera-jar",
+      "passed": true
+    },
+    {
+      "name": "camera-stool",
+      "passed": true
+    },
+    {
+      "name": "camera-keeper",
+      "passed": true
+    },
+    {
+      "name": "five-mouth-poses-and-independent-blink",
+      "passed": false,
+      "frames": [
+        "3",
+        "0",
+        "4",
+        "1",
+        "2"
+      ],
+      "blinks": [
+        "false"
+      ],
+      "samples": 15
+    },
+    {
+      "name": "steam-animates",
+      "passed": true,
+      "changedPixels": 111908
+    },
+    {
+      "name": "bowl-ground-clearance",
+      "passed": true
+    },
+    {
+      "name": "ambient-pause-is-stable",
+      "passed": true
+    },
+    {
+      "name": "paused-ambient-still-allows-visible-turn",
+      "passed": true,
+      "angles": "32.3,9.4,1.1,0.0"
+    },
+    {
+      "name": "wall-and-ui-arrive-together",
+      "passed": true,
+      "pastTheme": "rgb(116, 51, 39)",
+      "presentTheme": "rgb(48, 78, 71)"
+    },
+    {
+      "name": "rapid-reversal-settles",
+      "passed": true
+    },
+    {
+      "name": "mobile-no-overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile-focus",
+      "passed": true
+    },
+    {
+      "name": "about-dialog",
+      "passed": true
+    },
+    {
+      "name": "saved-memory-persists",
+      "passed": true
+    },
+    {
+      "name": "reduced-motion-default",
+      "passed": true
+    },
+    {
+      "name": "original-story-preserved",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "motion": "on",
+    "bowlClearance": "0.0040",
+    "era": "past",
+    "portraitFrame": "0",
+    "blink": "false",
+    "speaking": "false",
+    "wallAngle": "0.0",
+    "wallAngles": "0.0,0.0,0.0,0.0",
+    "steamTime": "3.94",
+    "drawCalls": "913",
+    "triangles": "180062",
+    "layers": "8",
+    "status": "ready",
+    "cameraDistance": "13.955",
+    "cameraSettled": "true",
+    "cameraTarget": "0.00,3.05,0.00"
+  }
+}

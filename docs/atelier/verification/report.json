@@ -1,0 +1,70 @@
+{
+  "url": "http://127.0.0.1:4173/?sample=noodle",
+  "checks": [
+    {
+      "name": "present-era",
+      "passed": true
+    },
+    {
+      "name": "jar-story",
+      "passed": true
+    },
+    {
+      "name": "memory-persists",
+      "passed": true
+    },
+    {
+      "name": "about-dialog",
+      "passed": true
+    },
+    {
+      "name": "mobile-no-horizontal-overflow",
+      "passed": true
+    },
+    {
+      "name": "motion-off",
+      "passed": true
+    },
+    {
+      "name": "rapid-era-switch",
+      "passed": true
+    },
+    {
+      "name": "projected-hotspot-opens-story",
+      "passed": true
+    },
+    {
+      "name": "rendered-motion-frames-differ",
+      "passed": true,
+      "changedPixels": 87933,
+      "maxChannelDifference": 192,
+      "tolerance": 2
+    },
+    {
+      "name": "motion-off-renders-stable",
+      "passed": true,
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "tolerance": 2
+    },
+    {
+      "name": "respects-reduced-motion",
+      "passed": true
+    },
+    {
+      "name": "original-story-opens",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "viewport": [
+      1440,
+      960
+    ],
+    "drawCalls": "397",
+    "triangles": "19886",
+    "layers": "8",
+    "canvasCount": 1
+  }
+}

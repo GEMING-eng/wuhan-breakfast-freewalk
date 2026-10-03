@@ -1,0 +1,11 @@
+import React, {lazy, Suspense} from 'react';
+import { createRoot } from 'react-dom/client';
+import { StoryProvider } from './app/StoryProvider';
+import { App } from './app/App';
+import './styles/style.css';
+import './styles/paper-stage.css';
+const Atelier=lazy(()=>import('./atelier/NoodleAtelier'));
+const Street=lazy(()=>import('./street/StreetExperience'));
+const Tour=lazy(()=>import('./street/ExploreExperience'));
+const sample=new URLSearchParams(location.search).get('sample');
+createRoot(document.getElementById('root')!).render(<React.StrictMode>{sample==='street'||sample==='noodle'||sample==='tour'?<Suspense fallback={<p style={{padding:40}}>清晨正在展开……</p>}>{sample==='tour'?<Tour/>:sample==='street'?<Street/>:<Atelier/>}</Suspense>:<StoryProvider><App/></StoryProvider>}</React.StrictMode>);

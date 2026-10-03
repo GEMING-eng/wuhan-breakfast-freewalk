@@ -1,0 +1,32 @@
+npm notice run wuhan-breakfast-story@1.1.0 test
+npm notice run node --experimental-strip-types --test tests/*.test.ts
+✔ front paper occludes interaction behind it (3.5473ms)
+✔ hidden ancestors remove nested meshes from picking (0.4178ms)
+✔ cutout paper opening does not grab a ray in empty space (2.2238ms)
+✔ projected anchor tracks viewport and hides when occluded (1.0318ms)
+✔ shop observation presets focus on the corresponding physical object (0.2152ms)
+✔ portrait street navigation focuses on each selected shop (0.5466ms)
+✔ unique content identifiers, valid edges, facts and source references (0.8034ms)
+✔ unobserved followup cannot jump or write completion (0.2565ms)
+✔ wrong observation and invalid choice cannot cross shops (0.1004ms)
+✔ completion is only after last followup sentence; no duplicate records (0.1227ms)
+✔ six shop permutations complete without reading basic topics (0.2718ms)
+✔ exit shop and re-enter restores an unfinished stable sentence (0.0745ms)
+✔ partial ending remains resumable without losing observations (0.0894ms)
+✔ fresh doupi entry uses alternative greeting without invented Lin visit (0.1252ms)
+✔ portal finish repeated or late cannot replace current screen (0.0771ms)
+✔ valid save restores checkpoint and remains behind welcome (0.2934ms)
+✔ welcome action preserves the stable checkpoint and all progress (0.2555ms)
+✔ low performance setting roundtrips and malformed value is rejected (0.0952ms)
+✔ damaged saves, old versions, invalid nodes and contradictory completion rejected (0.1154ms)
+✔ failed storage does not crash the experience (0.0901ms)
+✔ reset touches project key only and preserves settings (0.366ms)
+✔ settings clamp volume and reject wrong types (0.0596ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 157.5926

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "past-street",
+    "prompt": "历史街景最终生产提示词见 docs/production-prompts.md",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-68f21266-e802-4bbd-aae3-ab27803af76f.png by default."
+  },
+  {
+    "id": "present-street",
+    "prompt": "Final asset for an interactive story, landscape 16:9, warm detailed gouache illustration, natural edges, subtle paper grain, believable proportions and perspective, cream/wood brown/muted brick red/teal, warm sunrise upper right. Reference is the already finalized fictional 1980s Wuhan street, retain its palette, painting technique and architecture. No interface, no typography, no watermark, no character, no steam. Edit the reference into the SAME STREET TODAY. Strictly retain camera, three storefront positions, roof silhouette and lower-right small wooden stool position. Reasonably restored plaster, clean repaired wood, cleaner stainless counters, tidier contemporary awnings in same red/beige/teal colors, modern subtle ceiling fixtures, contemporary distant pedestrians different from historical owners, warm living morning. No landmarks or highrise needed. Architecture obviously same street, different period, not a copy with only different hue. Keep whole artwork.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-2f675579-3a7a-417f-a3a8-d86a610f0f99.png by default."
+  },
+  {
+    "id": "noodle-shop",
+    "prompt": "Final asset for an interactive story, landscape 16:9, warm detailed gouache illustration, natural edges, subtle paper grain, believable proportions and perspective, cream/wood brown/muted brick red/teal, warm sunrise upper right. Reference is the already finalized fictional 1980s Wuhan street, retain its palette, painting technique and architecture. No interface, no typography, no watermark, no character, no steam. Create a closeup of the LEFT red awning noodle shop in reference, frontal customer eye-level with foreground wooden counter at bottom 40% of image, a complete blue-and-white ceramic bowl of Wuhan hot-dry noodles golden brown noodles with sesame sauce and scallions at x .51 y .78, and a small worn brown ceramic sesame sauce jar with metal spoon at x .36 y .71. The LEFT x .12-.35 is space for a separate adult woman standing behind counter later; EMPTY behind counter. Counter edge full width at y .87 allows character bottom occlusion. Background shelves, modest worn enamel mugs, ceramic bowls, ordinary stove. Right x .70-.98 calm low-detail wall for dialogue overlay. No modern skyline, no packaging, no excessive steamer stacks.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-42aa14a9-e522-40ec-ab97-d5955119e995.png by default."
+  },
+  {
+    "id": "noodle-shop-final",
+    "prompt": "Edit only CONTENT INSIDE the small ceramic sauce jar at x .36 y .72: it must hold thick smooth LIGHT TAN/BROWN SESAME PASTE (zhimajiang), not red chili oil. A little thick sesame paste visible on spoon and worn jar rim. Preserve exact jar exterior shape, cream-brown mottled glaze, spoon angle, noodles bowl, entire background architecture and all other pixels, perspective, colors and aspect ratio. No added UI or text.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-d9e11477-2151-4d9a-9244-e0c91d15b5e7.png by default."
+  },
+  {
+    "id": "doupi-shop",
+    "prompt": "Final asset for an interactive story, landscape 16:9, warm detailed gouache illustration, natural edges, subtle paper grain, believable proportions and perspective, cream/wood brown/muted brick red/teal, warm sunrise upper right. Reference is the already finalized fictional 1980s Wuhan street, retain its palette, painting technique and architecture. No interface, no typography, no watermark, no character, no steam. Create a closeup of the MIDDLE beige awning doupi breakfast shop in reference. Frontal customer viewpoint, foreground wooden counter at lower40%, Chinese big shallow black iron wok with clearly recognizable golden square Wuhan sanxian doupi pieces in and beside it, rice visible in cut side, egg colored top, at x .51 y .78. A DISTINCT worn broad rectangular flat metal spatula with short wood handle HANGING VERTICALLY on wall at x .42 y .46, clear silhouette, no other spatulas. LEFT x .12-.35 EMPTY for separate middle-aged male character layer. Counter edge at y .87 for occlusion. Right x .7-.98 calmer wall for dialogue overlay. No noodles or buns or steamer stacks. Basic period tools, no modern devices.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-bf0dd29a-e59b-4587-9fe2-2d9c7e84c6c4.png by default."
+  },
+  {
+    "id": "mianwo-shop",
+    "prompt": "Final asset for an interactive story, landscape 16:9, warm detailed gouache illustration, natural edges, subtle paper grain, believable proportions and perspective, cream/wood brown/muted brick red/teal, warm sunrise upper right. Reference is the already finalized fictional 1980s Wuhan street, retain its palette, painting technique and architecture. No interface, no typography, no watermark, no character, no steam. Create a closeup of the RIGHT teal-awning mianwo street breakfast stall in reference. Frontal customer view, foreground wood counter at lower35%, plate or wire strainer with several authentic Wuhan mianwo fried rice fritters: thick irregular golden outer rim and thin sunken crunchy center, not sugary smooth Western donuts, at x .51 y .68. A FULL SMALL LOW WOODEN STOOL IN FOREGROUND at x .44 y .88, four rustic legs and shiny worn square seat, same style as reference stool. Leave left x .12-.32 for separately composited 60yo male owner. Empty scene no person. Right third simple low detail wall for interface. Show a little old frying gear, no plastic packaging, no steamer stacks.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-907eb5c3-c8fc-484c-991d-ee96fc49f623.png by default."
+  },
+  {
+    "id": "mianwo-shop-repaired",
+    "prompt": "Edit target provided finalized warm breakfast stall illustration. Change ONLY small wooden stool: make stool slightly smaller and move upward/back so ALL FOUR LEGS and feet are fully visible, entirely inside image, seat at x .43 y .78, feet above y .97. Keep original rustic construction, warm patina, wood grain and worn seat. Preserve all other architecture, image dimensions 16:9, palette, teal awning, food and equipment exactly. No new objects no characters no text.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-adb5d586-bd5c-4345-89a9-b35c51d85986.png by default."
+  },
+  {
+    "id": "lin-neutral",
+    "prompt": "Use case illustration-story. FINAL transparent cutout character for the provided Wuhan breakfast illustration, retain its warm detailed gouache/hand-painted texture, realistic adult anatomy, understated gently drawn face, warm sunlight from upper right, muted palette. ONE person only centered on transparent canvas, from head to just below hips, entire hands visible, facing customer, front view slightly angled. No background, no rectangle, no floor shadow, no tools or bowls, no words, no watermark. Canvas portrait 2:3, body stays straight and upright not floating, head near y .08 and hips near .92, natural arms at waist. Older credible face, not youthful anime or chibi. Chinese woman age38, hair in low tidy bun, dark black shirt sleeves rolled to forearm, faded muted brick-red small check apron. Neutral attentive expression while welcoming customer, one hand resting at waist and other slightly gesturing, five fingers.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-494298bf-527e-40af-a11c-008efd0c10df.png by default."
+  },
+  {
+    "id": "lin-warm",
+    "prompt": "Edit the single cutout woman reference into her second pose. Keep exactly same identity, age38 with slightly mature small smile lines, same hair, black shirt, muted faded red check apron, lighting, gouache texture, framing and canvas dimensions 1024x1536. Change only expression to warmer small welcoming smile, eyes toward viewer, and small inviting hand gesture at waist. Body/head position and size SAME so crossfade works. Background genuinely transparent alpha, no background color or glow, no shadow, only clean character edges. No new objects or text.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-2404f536-5e65-4b20-b68a-bc36b2556234.png by default."
+  },
+  {
+    "id": "zhou-neutral",
+    "prompt": "Use case illustration-story. FINAL transparent cutout character for the provided Wuhan breakfast illustration, retain its warm detailed gouache/hand-painted texture, realistic adult anatomy, understated gently drawn face, warm sunlight from upper right, muted palette. ONE person only centered on transparent canvas, from head to just below hips, entire hands visible, facing customer, front view slightly angled. No background, no rectangle, no floor shadow, no tools or bowls, no words, no watermark. Canvas portrait 2:3, body stays straight and upright not floating, head near y .08 and hips near .92, natural arms at waist. Older credible face, not youthful anime or chibi. Chinese man age50, slightly receding short dark hair with little gray, grey-blue work shirt and cream linen apron, a gently lined face, calm precise reserved expression, hands resting naturally at waist.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-f1e43f2f-a429-47f9-97e0-d07c19fbcaf3.png by default."
+  },
+  {
+    "id": "zhou-thought",
+    "prompt": "Edit the single cutout middle-aged male character into second pose. Keep EXACT same identity, age50, grey-blue shirt, cream apron, hair, lighting, painting texture, framing and 1024x1536 canvas. Change only head gaze slightly down right toward a tool, thoughtful reserved gentle expression, hands still at waist. Body position size and shoulders unchanged for crossfade. Background genuinely transparent alpha with clean character edges, no glow no color backdrop no shadow no text no extra tools.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-46d72cf2-5e38-4e35-890d-f92c29704970.png by default."
+  },
+  {
+    "id": "chen-neutral",
+    "prompt": "Use case illustration-story. FINAL transparent cutout character for the provided Wuhan breakfast illustration, retain its warm detailed gouache/hand-painted texture, realistic adult anatomy, understated gently drawn face, warm sunlight from upper right, muted palette. ONE person only centered on transparent canvas, from head to just below hips, entire hands visible, facing customer, front view slightly angled. No background, no rectangle, no floor shadow, no tools or bowls, no words, no watermark. Canvas portrait 2:3, body stays straight and upright not floating, head near y .08 and hips near .92, natural arms at waist. Older credible face, not youthful anime or chibi. Chinese man age60, short gray hair, subtle wrinkles and kind eyes, brown plain work jacket with light gray apron, neutral relaxed welcoming expression, hands resting naturally at waist.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-1a4e0aec-3db0-456e-a228-85e4546615a0.png by default."
+  },
+  {
+    "id": "chen-warm",
+    "prompt": "Edit the single cutout elderly man character into second pose. Keep EXACT same identity, age60, gray hair, brown jacket, light gray apron, lighting, painting style and 1024x1536 canvas. Change only expression to slightly warmer smile and small inviting palm gesture at waist. Body head position and size SAME for crossfade. Background truly transparent alpha only clean character silhouette, no backdrop no glow no shadow no objects no typography.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-c455427a-b437-49d4-ab71-f12807db8269.png by default."
+  },
+  {
+    "id": "saucejar-detail",
+    "prompt": "Create final 4:3 closeup observation illustration of the EXACT worn sesame sauce jar and used silver spoon visible in supplied finalized shop background. Preserve the brown ceramic jar shape, glazed mottled cream patches, worn rim, spoon angle, setting on warm worn wood, warm upper-right light and painting technique. Jar occupies 60% of image, whole jar and spoon fully visible, subtle simple shop background. No other jars, no text, arrows, interface or character.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-3eaf849f-fc28-4bfb-a502-4afc45c3d59e.png by default."
+  },
+  {
+    "id": "saucejar-detail-final",
+    "prompt": "Edit only CONTENT INSIDE ceramic jar and spoon: replace red chili oil with thick smooth LIGHT TAN/BROWN SESAME PASTE, no floating red chili flakes. Thick viscous sesame paste coating a bit of spoon and rim. Preserve EXACT jar exterior mottled cream and brown glaze, wear, shape, whole spoon angle, wooden counter, warm illustrated painting style and full4:3 composition. No new objects or text.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-1728bd2c-7d90-4e5d-aaa0-65079e0c356f.png by default."
+  },
+  {
+    "id": "spatula-detail",
+    "prompt": "Create final 4:3 closeup observation illustration of EXACT hanging old spatula in reference: flat broad rectangular worn metal blade, short round brown wood handle, hanging by small hook on yellow old plaster beside wood frame. Preserve shape, rust/patina, wood handle wear and hanging orientation, same warm sunlight and gouache style. Whole spatula fully visible, takes 70% frame. Simplify background, no text no arrows no characters no interface.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-dd462743-df25-42ac-8faf-6cf7e9c84058.png by default."
+  },
+  {
+    "id": "stool-detail",
+    "prompt": "Create final 4:3 closeup observation illustration of EXACT small rustic wood stool in reference. Same warm brown four-legged construction, worn shiny rectangular seat, nicks and crossbraces, on same stone paving in front of counter. All four feet and seat fully visible, object fills 70% frame, same warm upper-right sunrise and gouache technique. No other stools no text no arrows no people no UI.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-10b55c8b-af0a-46ec-a19d-3458d350e2c4.png by default."
+  },
+  {
+    "id": "noodle",
+    "prompt": "Create final square 1:1 food illustration for a cultural information card, close view of the EXACT blue-and-white porcelain bowl of Wuhan hot dry noodles in the reference. Complete bowl fully inside image, golden noodles with visibly thick light brown sesame paste, scallion pieces, a few diced pickled vegetables, all at realistic scale. Same detailed warm gouache style, soft natural drawn edges, subtle paper texture, warm wooden counter and softly simplified background. Food occupies70% and readable. No UI no labels no people no words, NOT soup noodles.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-3757a04d-e6cc-443e-ab2c-b809718551eb.png by default."
+  },
+  {
+    "id": "doupi",
+    "prompt": "Create final square 1:1 food illustration for a cultural info card of Wuhan sanxian doupi matching reference. Complete blue-and-white plate with3 gold square egg outer layer doupi pieces, one cut side clearly reveals white glutinous rice and small meat/mushroom filling. Keep reference exact shape and color, realistic proportions, detailed warm gouache texture on old wooden counter with gently simplified background. Food occupies70%. No text no UI no character no arrow no steamer.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-1bf08bcf-b276-4b82-a239-a59d5498c4e0.png by default."
+  },
+  {
+    "id": "mianwo",
+    "prompt": "Create final square 1:1 close food illustration for a culture card of Wuhan mianwo matching reference. A wire draining tray with3 irregular golden fried rice batter fritters, clearly thick rough outer rim and thin sunken crispy center, little black sesame. NOT smooth sweet glazed Western donuts. Whole tray fully inside image, same warm gouache style, wood counter, simple background, realistic proportions. No text no UI no people no arrows.",
+    "sourceHint": "Generated images are saved to D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f as D:\\CodexHome\\generated_images\\01a0f167-84e3-72c3-90a1-d8cad5d7c01f\\exec-5f41ce1e-1f8c-4ecf-881c-449d3a3822ee.png by default."
+  }
+]

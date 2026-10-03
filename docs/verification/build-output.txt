@@ -1,0 +1,21 @@
+npm notice run wuhan-breakfast-story@1.1.0 build
+npm notice run tsc -b && vite build
+vite v8.3.1 building client environment for production...
+transforming...
+✓ 40 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                             0.96 kB │ gzip:   0.57 kB
+dist/assets/index-Ct9_JeI1.css             28.84 kB │ gzip:   7.23 kB
+dist/assets/rolldown-runtime-CbXtAM7H.js    0.58 kB │ gzip:   0.36 kB
+dist/assets/gsap-CvDoa17S.js               69.58 kB │ gzip:  27.29 kB
+dist/assets/index-BnBJM6pG.js              70.51 kB │ gzip:  25.92 kB
+dist/assets/react-Dy-GIXkn.js             218.83 kB │ gzip:  68.25 kB
+dist/assets/three-d2isXjxQ.js             590.57 kB │ gzip: 151.24 kB
+
+✓ built in 184ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.

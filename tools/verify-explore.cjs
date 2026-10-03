@@ -1,0 +1,44 @@
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const fs=require('node:fs'),path=require('node:path');
+const out=path.resolve('docs/street/verification-explore');fs.mkdirSync(out,{recursive:true});
+(async()=>{
+ const browser=await chromium.launch({headless:true,executablePath:process.env.CHROMIUM_PATH,args:['--enable-webgl','--use-angle=d3d11']});
+ const p=await browser.newPage({viewport:{width:1440,height:960},acceptDownloads:true});p.setDefaultTimeout(90000);
+ const report={date:'2026-10-03',checks:[],errors:[]};const check=(name,passed,extra={})=>{report.checks.push({name,passed,...extra});console.log(name,passed,extra);};
+ p.on('pageerror',e=>report.errors.push(e.message));p.on('console',m=>{if(m.type()==='error')report.errors.push(m.text());});p.on('response',r=>{if(r.status()>=400)report.errors.push(r.status()+' '+r.url());});
+ const stage=p.locator('.explore-canvas');const ready=()=>p.waitForFunction(()=>document.querySelector('.explore-canvas')?.dataset.status==='ready');
+ const settled=()=>p.waitForFunction(()=>document.querySelector('.explore-canvas')?.dataset.cameraSettled==='true');
+ const arrived=async id=>{await p.waitForFunction(id=>{const e=document.querySelector('.explore-canvas');return e?.dataset.walkStop===id&&e.dataset.walking==='false'&&!!document.querySelector('.explore-reading');},id);await settled();};
+ const shot=n=>p.screenshot({path:path.join(out,n+'.png'),fullPage:true});
+ const toMap=async()=>{await p.getByRole('button',{name:'老街地图',exact:true}).click();await p.waitForTimeout(100);await settled();};
+ const pin=id=>p.locator('.explore-pin[data-place="'+id+'"]');
+ try{
+  await p.goto('http://127.0.0.1:4173/?sample=tour&v=7');await ready();await p.locator('.market-cover-art').evaluate(e=>e.decode());await shot('01-cover');
+  check('illustrated-cover-ready',await p.locator('.market-cover h1').isVisible()&&await p.locator('.market-cover-art').evaluate(e=>e.naturalWidth>1000));
+  await p.getByRole('button',{name:/去街上逛逛/}).click();await settled();await shot('02-map');
+  check('all-six-free-choice-map-pins-visible',await p.locator('.explore-pin:visible').count()===6);
+  const hits=await p.locator('.explore-pin').evaluateAll(nodes=>nodes.map(e=>{const r=e.getBoundingClientRect(),hit=document.elementFromPoint(r.left+r.width/2,r.top+r.height/2);return {name:e.dataset.place,reachable:e.contains(hit),x:r.x,y:r.y};}));check('map-hotspots-not-covered',hits.every(h=>h.reachable),{hits});
+  check('eighteen-paper-visitors-and-three-food-counters',await stage.getAttribute('data-street-people')==='18'&&await stage.getAttribute('data-food-counters')==='3');
+  check('basket-starts-empty',await p.locator('.basket-empty').isVisible());
+  await pin('mianwo').click();await p.waitForFunction(()=>document.querySelector('.explore-canvas').dataset.walking==='true');
+  const movement=await stage.evaluate(e=>new Promise(resolve=>{let i=0,a=[];const t=setInterval(()=>{a.push(e.dataset.cameraPosition);if(++i===8){clearInterval(t);resolve(a);}},140);}));check('selected-shop-walk-is-first-person',new Set(movement).size>2&&movement.every(v=>v.split(',')[1]==='2.450'),{movement});await shot('03-walking');await arrived('mianwo');await shot('04-mianwo');
+  check('mianwo-can-be-visited-first',await p.locator('main').getAttribute('data-place')==='mianwo');
+  await p.getByRole('button',{name:/把面窝放进食篮/}).click();check('food-enters-left-basket',await p.locator('.basket-item').count()===1);check('no-duplicate-food',await p.locator('.explore-add-food').isDisabled());
+  await p.getByRole('button',{name:'看看出处 ↗'}).click();check('food-page-has-specific-source',await p.locator('dialog a[href*="wlt.hubei.gov.cn"]').count()===1);await p.keyboard.press('Escape');
+  await toMap();await pin('doupi').click();await arrived('doupi');await shot('05-doupi');await p.getByRole('button',{name:/把三鲜豆皮放进食篮/}).click();
+  await toMap();await pin('noodle').click();await arrived('noodle');await shot('06-noodle');await p.getByRole('button',{name:/把热干面放进食篮/}).click();check('all-three-foods-can-be-saved-in-any-order',await p.locator('.basket-item').count()===3);
+  await p.getByRole('button',{name:'移出面窝'}).click();check('basket-removal-works',await p.locator('.basket-item').count()===2);
+  const past=await p.locator('.explore-reading').evaluate(e=>getComputedStyle(e).backgroundColor);await p.getByRole('navigation',{name:'店内话题'}).getByRole('button',{name:'看今昔'}).click();await arrived('eras');
+  await p.locator('.explore-inline-era').getByRole('button',{name:'今日',exact:true}).click();await p.waitForFunction(()=>{const a=+document.querySelector('.explore-canvas').dataset.wallAngle;return a>10&&a<170;},null,{polling:16});await shot('07-era-turn');await p.waitForFunction(()=>document.querySelector('.explore-canvas').dataset.turning==='false');await shot('08-present');check('era-turn-and-rounded-ui-preserved',await stage.getAttribute('data-wall-angle')==='180.0'&&past!==await p.locator('.explore-reading').evaluate(e=>getComputedStyle(e).backgroundColor)&&await p.locator('.explore-reading').evaluate(e=>parseFloat(getComputedStyle(e).borderTopLeftRadius)>=20));
+  await p.getByRole('button',{name:'收起介绍',exact:true}).click();check('story-can-be-closed-without-moving-on',await p.locator('.explore-reopen').isVisible()&&await p.locator('main').getAttribute('data-place')==='noodle');
+  const d=p.waitForEvent('download');await p.getByRole('button',{name:/带走我的食篮/}).click();await (await d).saveAs(path.join(out,'basket.md'));check('basket-download-has-only-selected-food',fs.readFileSync(path.join(out,'basket.md'),'utf8').includes('- 三鲜豆皮')&&!fs.readFileSync(path.join(out,'basket.md'),'utf8').includes('- 面窝：'));
+  await p.reload();await ready();await p.getByRole('button',{name:/去街上逛逛/}).click();await settled();check('basket-survives-refresh',await p.locator('.basket-item').count()===2);await shot('09-saved-map');
+  await p.setViewportSize({width:390,height:844});await settled();await p.waitForTimeout(300);await shot('10-mobile-map');
+  const mobileHits=await p.locator('.explore-pin').evaluateAll(nodes=>nodes.map(e=>{const r=e.getBoundingClientRect();return {name:e.dataset.place,visible:!e.hidden,reachable:e.contains(document.elementFromPoint(r.left+r.width/2,r.top+r.height/2))};}));check('mobile-all-pins-reachable',mobileHits.every(h=>h.reachable&&h.visible),{mobileHits});
+  await p.getByRole('button',{name:'静一静',exact:true}).click();await pin('doupi').click();await arrived('doupi');await shot('11-mobile-doupi');
+  check('mobile-reading-and-actions-fit',await p.locator('.explore-reading-footer').evaluate(e=>e.getBoundingClientRect().bottom<innerHeight)&&await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  await p.getByRole('button',{name:/我的过早 2/}).click();await shot('12-mobile-basket');check('mobile-basket-accessible',await p.locator('.explore-basket').isVisible());await p.getByRole('button',{name:'移出三鲜豆皮'}).click();await p.getByRole('button',{name:'收起食篮',exact:true}).click();await p.getByRole('button',{name:/把三鲜豆皮放进食篮/}).click();check('mobile-can-add-after-removing',await p.locator('.explore-add-food').isDisabled());
+  await p.getByRole('button',{name:'返回封面',exact:true}).click();await shot('13-mobile-cover');await p.setViewportSize({width:320,height:740});await shot('14-small-cover');check('small-cover-fits',await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ }catch(e){report.errors.push(e.stack);console.error(e);await shot('failure').catch(()=>{});}
+ finally{fs.writeFileSync(path.join(out,'report.json'),JSON.stringify(report,null,2));await browser.close();}console.log(JSON.stringify(report,null,2));if(report.errors.length||report.checks.some(c=>!c.passed))process.exitCode=1;
+})();

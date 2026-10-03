@@ -1,0 +1,54 @@
+{
+  "viewport": {
+    "width": 1920,
+    "height": 1080,
+    "dpr": 1.0000000149011612
+  },
+  "state": {
+    "saveVersion": 1,
+    "started": true,
+    "screen": "welcome",
+    "shopId": null,
+    "dialogueNodeId": "ending_04",
+    "stableCheckpoint": {
+      "screen": "present-ending",
+      "shopId": null,
+      "dialogueNodeId": "ending_04"
+    },
+    "observed": {
+      "sauceJar": true,
+      "spatula": true,
+      "stool": true
+    },
+    "topicsRead": {
+      "n_follow": true,
+      "d_follow": true,
+      "m_follow": true
+    },
+    "completed": {
+      "noodle": true,
+      "doupi": true,
+      "mianwo": true
+    },
+    "visited": {
+      "noodle": true,
+      "doupi": true,
+      "mianwo": true
+    },
+    "shopNodes": {
+      "noodle": "n_menu",
+      "doupi": "d_menu",
+      "mianwo": "m_menu"
+    },
+    "endingSeen": "complete",
+    "invitationSeen": true,
+    "settings": {
+      "muted": false,
+      "volume": 0.1,
+      "reducedMotion": false,
+      "instantText": true
+    }
+  },
+  "text": "味觉中国\n地方生活叙事\n♪\n☷\n\n武汉街巷清晨 / 纸景定格\n\n相册里，夹着一个清晨。\n武汉 · 日常的味道\n过早\n过早\n旧影。\n\n走进一张照片，\n听见武汉的清晨。\n\n继续这段清晨\n→\n重新开始\n\n约 6—8 分钟 · 可以随时停留与继续\n\n本作依据武汉饮食文化资料进行艺术化演绎，街段与人物为虚构，不是某一历史地点的精确复原。\n\n一张照片 · 三间小铺 · 一个清晨\n资料与创作说明 ↗",
+  "renderer": "street-landscape"
+}

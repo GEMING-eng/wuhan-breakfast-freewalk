@@ -1,0 +1,54 @@
+{
+  "viewport": {
+    "width": 1920,
+    "height": 1080,
+    "dpr": 1.0000000149011612
+  },
+  "state": {
+    "saveVersion": 1,
+    "started": true,
+    "screen": "present-ending",
+    "shopId": null,
+    "dialogueNodeId": "ending_04",
+    "stableCheckpoint": {
+      "screen": "present-ending",
+      "shopId": null,
+      "dialogueNodeId": "ending_04"
+    },
+    "observed": {
+      "sauceJar": true,
+      "spatula": true,
+      "stool": true
+    },
+    "topicsRead": {
+      "n_follow": true,
+      "d_follow": true,
+      "m_follow": true
+    },
+    "completed": {
+      "noodle": true,
+      "doupi": true,
+      "mianwo": true
+    },
+    "visited": {
+      "noodle": true,
+      "doupi": true,
+      "mianwo": true
+    },
+    "shopNodes": {
+      "noodle": "n_menu",
+      "doupi": "d_menu",
+      "mianwo": "m_menu"
+    },
+    "endingSeen": "complete",
+    "invitationSeen": true,
+    "settings": {
+      "muted": false,
+      "volume": 0.1,
+      "reducedMotion": false,
+      "instantText": true
+    }
+  },
+  "text": "纸景中的清晨\n画面暂时歇了一会儿\n\n故事进度已保留，可以重试恢复。\n\n重试纸景\n返回\n←\n再逛这条街\n我的过早\n3 / 3\n♪\n☷\n今天 · 清晨仍在继续\n这张照片里的\n三段过早记忆\n\n“坐下吃，还是带着走？”\n\n01\n热干面铺 · 芝麻酱罐\n一碗面的清晨\n\n过早把一天的脚步，与一口热食连在一起。\n\n02\n豆皮铺 · 旧锅铲\n手上的分寸\n\n手艺不只写在配方里，也在一次次观察和练习里。\n\n03\n面窝摊 · 小木凳\n街坊的一张凳\n\n食物之外，留下的还有招呼、停留和相处。\n\n再逛这条街\n→\n查看资料\n回到开头\n\n三条作品记忆，不代表全部武汉饮食生活。\n\n当代街口 · 三维纸景\n资料与创作说明 ↗",
+  "renderer": "street-landscape"
+}

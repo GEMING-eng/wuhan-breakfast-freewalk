@@ -1,0 +1,404 @@
+{
+  "date": "2026-09-30",
+  "images": [
+    {
+      "file": "paper-doupi-390x844.png",
+      "dimensions": [
+        375,
+        481
+      ],
+      "bytes": 157779,
+      "sha256": "5f712835203b60beefc91dc2fee18b2f46faf4b96a9a94c1aa0046c6fad04a70",
+      "record": "paper-doupi-390x844.json"
+    },
+    {
+      "file": "paper-doupi-observe-1366x768.png",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "bytes": 363608,
+      "sha256": "c34c156f0f8eb18901c89ca5db5d9962e4762c4f4c7b2288303051a0c6ec7e92",
+      "record": "paper-doupi-observe-1366x768.json"
+    },
+    {
+      "file": "paper-doupi-observe-390x844.png",
+      "dimensions": [
+        390,
+        481
+      ],
+      "bytes": 93724,
+      "sha256": "314050c11ef469a54fe77ebb1914efbd376e0efce12d3b1f2311d6ae3ec0da00",
+      "record": "paper-doupi-observe-390x844.json"
+    },
+    {
+      "file": "paper-mianwo-360x800.png",
+      "dimensions": [
+        360,
+        456
+      ],
+      "bytes": 148338,
+      "sha256": "7a41e3df9abd541f7c115304554dca401d6e4528c01b0b769bd9ffc813733799",
+      "record": "paper-mianwo-360x800.json"
+    },
+    {
+      "file": "paper-mianwo-observe-1366x768.png",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "bytes": 550944,
+      "sha256": "55c30a2e3bbf6dee8dd1f83d9d484a309ab6f8e718992bddb39d10e949a37760",
+      "record": "paper-mianwo-observe-1366x768.json"
+    },
+    {
+      "file": "paper-mianwo-observe-360x800.png",
+      "dimensions": [
+        360,
+        456
+      ],
+      "bytes": 143978,
+      "sha256": "8d3a8e2abae61c4d9dcefa37150bf3a3be856b36a7f65508069cad6cac8f44b5",
+      "record": "paper-mianwo-observe-360x800.json"
+    },
+    {
+      "file": "paper-mianwo-observe-844x390.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "bytes": 211952,
+      "sha256": "ec0e175b8becbfb8ca2b81b00641fdea5c17bd84e1c838736c8f42ea5b090f71",
+      "record": "paper-mianwo-observe-844x390.json"
+    },
+    {
+      "file": "paper-noodle-1170x1003.png",
+      "dimensions": [
+        1463,
+        1254
+      ],
+      "bytes": 1354586,
+      "sha256": "ebec6dc4809ece72dd4bd2ca88b58a1836424508f218bb258289cb8a7535ddd4",
+      "record": "paper-noodle-1170x1003.json"
+    },
+    {
+      "file": "paper-noodle-observe-932x430.png",
+      "dimensions": [
+        932,
+        430
+      ],
+      "bytes": 289776,
+      "sha256": "2178c02649a8f37a36b9b81d4ada2eb8e30a81b7be5cf5d072bc2b685775124f",
+      "record": "paper-noodle-observe-932x430.json"
+    },
+    {
+      "file": "paper-street-1170x1003.png",
+      "dimensions": [
+        1463,
+        1254
+      ],
+      "bytes": 882294,
+      "sha256": "c01dc099b9655aec68625f43c3ac0c74d2c940817866ac91f7f4df673791d89d",
+      "record": "paper-street-1170x1003.json"
+    },
+    {
+      "file": "paper-street-390x844.png",
+      "dimensions": [
+        390,
+        481
+      ],
+      "bytes": 157709,
+      "sha256": "37b3655a3c3ca676c596f2104c25d9874adec16d7245ec62695979b3049c3466",
+      "record": "paper-street-390x844.json"
+    },
+    {
+      "file": "paper-street-portal_100-1366x768.png",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "bytes": 419307,
+      "sha256": "08d5d9a5ef5926a7dca9b1dc34c70922fa1f4f8fca2bdeb34081af5e6984482e",
+      "record": "paper-street-portal_100-1366x768.json"
+    },
+    {
+      "file": "paper-street-portal_23-1366x768.png",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "bytes": 319159,
+      "sha256": "f5e54541ebca3e5cd7290166dab634cf6776d7d282024ad084ef48fadd4d4dd7",
+      "record": "paper-street-portal_23-1366x768.json"
+    },
+    {
+      "file": "paper-street-portal_36-1366x768.png",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "bytes": 405854,
+      "sha256": "c1d79c257730f56c94d1c33b67c70fd1045d04c1aaad8bd7de438a2119f1f165",
+      "record": "paper-street-portal_36-1366x768.json"
+    },
+    {
+      "file": "paper-street-portal_87-1366x768.png",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "bytes": 418193,
+      "sha256": "b28453895149231f6b1edb3b9ad1dc29b9425a3a8c5938abee59e1f6046e5665",
+      "record": "paper-street-portal_87-1366x768.json"
+    },
+    {
+      "file": "ui-context_lost-1170x1003.png",
+      "dimensions": [
+        1170,
+        1003
+      ],
+      "bytes": 260856,
+      "sha256": "a98201a4dca87dd52e20278cfd71015a4be1a6b862066c25b49e47c20da30be1",
+      "record": "ui-context_lost-1170x1003.json"
+    },
+    {
+      "file": "ui-context_lost-1920x1080.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 514491,
+      "sha256": "197e4cd7a682031fcfa2f158b915474eeabe6176786bc340f11444c34908e1cc",
+      "record": "ui-context_lost-1920x1080.json"
+    },
+    {
+      "file": "ui-context_restored-1170x1003.png",
+      "dimensions": [
+        1170,
+        1003
+      ],
+      "bytes": 744420,
+      "sha256": "e8dfbb38fe03d2322b6f5dcbd4ab5f211008c0c16e1c74214f92058e21293068",
+      "record": "ui-context_restored-1170x1003.json"
+    },
+    {
+      "file": "ui-doupi_menu-1366x768.png",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "bytes": 939728,
+      "sha256": "9ee262b3ccf7b2499b18330fca71a60715b17fc14df48ac48f8ad752e7113076",
+      "record": "ui-doupi_menu-1366x768.json"
+    },
+    {
+      "file": "ui-doupi_observe-1366x768.png",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "bytes": 951791,
+      "sha256": "d89f905c4419c462012adc07e9e5bcd564aadd7f237b756388ed871884bb72af",
+      "record": "ui-doupi_observe-1366x768.json"
+    },
+    {
+      "file": "ui-doupi_observe-390x844.png",
+      "dimensions": [
+        390,
+        844
+      ],
+      "bytes": 263511,
+      "sha256": "a51b842542fa452b9f407744494da2f7aaeadf08b8836dd6018975e55b5f2b40",
+      "record": "ui-doupi_observe-390x844.json"
+    },
+    {
+      "file": "ui-ending_complete-1920x1080.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 791860,
+      "sha256": "e00b8b27dacb563dfc9a5e22052715b00f8537a5004a0beb64cb4465a8106763",
+      "record": "ui-ending_complete-1920x1080.json"
+    },
+    {
+      "file": "ui-low_performance-1170x1003.png",
+      "dimensions": [
+        1170,
+        1003
+      ],
+      "bytes": 1012693,
+      "sha256": "731561ec102e87df8ace04fd3545f9b73cde7e4c82184351483b87640bccd6ce",
+      "record": "ui-low_performance-1170x1003.json"
+    },
+    {
+      "file": "ui-mianwo_menu-1366x768.png",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "bytes": 850155,
+      "sha256": "33a7d2542d0e2ddac1062e6d846cc331bb182096dc708d3c02c6d19b34eebafe",
+      "record": "ui-mianwo_menu-1366x768.json"
+    },
+    {
+      "file": "ui-mianwo_observe-1366x768.png",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "bytes": 900895,
+      "sha256": "e4adc9dd1b3c343ed20fb71fb1c72c827ebd4c81f6c0464c43b610244e88b326",
+      "record": "ui-mianwo_observe-1366x768.json"
+    },
+    {
+      "file": "ui-mianwo_observe-360x800.png",
+      "dimensions": [
+        360,
+        800
+      ],
+      "bytes": 292398,
+      "sha256": "e5c4cc3794de125202d679eb061da173feec8bf6bb2db1acb2f5e21ac2db1919",
+      "record": "ui-mianwo_observe-360x800.json"
+    },
+    {
+      "file": "ui-mianwo_observe-844x390.png",
+      "dimensions": [
+        844,
+        390
+      ],
+      "bytes": 294046,
+      "sha256": "30a3dedb8647aaf7a727cf4dfd8397ac8b1f932e305cfb5b6889a8f474b53c6b",
+      "record": "ui-mianwo_observe-844x390.json"
+    },
+    {
+      "file": "ui-noodle_menu-1170x1003.png",
+      "dimensions": [
+        1170,
+        1003
+      ],
+      "bytes": 1065721,
+      "sha256": "09f668b67047220bcd0cb5abd0bc347eceb2a14e942737ea496661c134fa7602",
+      "record": "ui-noodle_menu-1170x1003.json"
+    },
+    {
+      "file": "ui-noodle_menu-390x844.png",
+      "dimensions": [
+        390,
+        844
+      ],
+      "bytes": 335949,
+      "sha256": "5e9d7881551b3329fbe9490a1031c2159d7aec136535152b7bc58e4f17689092",
+      "record": "ui-noodle_menu-390x844.json"
+    },
+    {
+      "file": "ui-noodle_menu-932x430.png",
+      "dimensions": [
+        932,
+        430
+      ],
+      "bytes": 399511,
+      "sha256": "01a68ccb0e79599740f5ef8651058ac9dc92d0f8c017d96133c3a986aea6b440",
+      "record": "ui-noodle_menu-932x430.json"
+    },
+    {
+      "file": "ui-noodle_observe-390x844.png",
+      "dimensions": [
+        390,
+        844
+      ],
+      "bytes": 367210,
+      "sha256": "bb830bfc1e472cb803356058b85ae9d8cb8751408176dcd645cbb37e8a4735b1",
+      "record": "ui-noodle_observe-390x844.json"
+    },
+    {
+      "file": "ui-noodle_observe-932x430.png",
+      "dimensions": [
+        932,
+        430
+      ],
+      "bytes": 423656,
+      "sha256": "1d06d093b33df968e4aa7956374800c9ca0bffa14cd0c82c8389b18ccac30cf0",
+      "record": "ui-noodle_observe-932x430.json"
+    },
+    {
+      "file": "ui-sources-1920x1080.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 986911,
+      "sha256": "dbde3b355f8aa98039bed7caac7bd491359ba4dfa9c4165fa114d000360afb9d",
+      "record": "ui-sources-1920x1080.json"
+    },
+    {
+      "file": "ui-storage_failed-1366x768.png",
+      "dimensions": [
+        1366,
+        768
+      ],
+      "bytes": 797163,
+      "sha256": "26ca6c0b9c45ca3571f6c0f25b57bd523802b2c69097a398b2550fd331d8cde6",
+      "record": "ui-storage_failed-1366x768.json"
+    },
+    {
+      "file": "ui-street-1170x1003.png",
+      "dimensions": [
+        1170,
+        1003
+      ],
+      "bytes": 742691,
+      "sha256": "13b4f759c659ac18a5d0b9924211d65870797c1b3ffad02a836bfd0d7cce4259",
+      "record": "ui-street-1170x1003.json"
+    },
+    {
+      "file": "ui-welcome-1920x1080.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "bytes": 1268971,
+      "sha256": "2dd9ef979636da0836c39c43b1cd5f45ebd812997b05e777ece0f34e4b527d1c",
+      "record": "ui-welcome-1920x1080.json"
+    }
+  ],
+  "portalFrames": [
+    {
+      "file": "paper-street-portal_23-1366x768.json",
+      "depth": 0.22579774,
+      "camera": [
+        6.4,
+        6.4,
+        23.45037
+      ]
+    },
+    {
+      "file": "paper-street-portal_36-1366x768.json",
+      "depth": 0.3630832,
+      "camera": [
+        6.4,
+        6.4,
+        20.392028
+      ]
+    },
+    {
+      "file": "paper-street-portal_87-1366x768.json",
+      "depth": 0.86790934,
+      "camera": [
+        6.4,
+        6.4,
+        20.2
+      ]
+    },
+    {
+      "file": "paper-street-portal_100-1366x768.json",
+      "depth": 0.99952966,
+      "camera": [
+        6.4,
+        6.4,
+        20.2
+      ]
+    }
+  ],
+  "scope": "browser-emulated viewport; not real mobile hardware"
+}

@@ -1,0 +1,34 @@
+{
+  "created": "2026-10-01",
+  "tool": "Built-in image_gen",
+  "assets": [
+    {
+      "id": "interior",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Production artwork for a carefully crafted layered paper diorama of a fictional Wuhan Hankou neighborhood breakfast shop circa late 1980s. Art direction: sophisticated Chinese illustrated storybook, hand-cut paper collage with dry gouache pigment, expressive subtle woodcut linework, visible warm cotton-paper grain. Restrained palette oxblood red, indigo charcoal, muted jade, tobacco wood, ivory; beautiful bold designed shapes, NOT photorealism, NOT anime, NOT generic flat vector clipart. Warm morning light from upper left, subdued painted shadows, no hard baked outer cast shadow. No text, no watermark. Asset: landscape rectangular interior backdrop print, aspect about 3:2. STRICT frontal orthographic view, flat architectural elevation. A dark intimate tiny breakfast shop back wall: aged pale plaster over dark blue-gray brick, irregular exposed patches, old timber shelves at right holding small ivory-and-cobalt porcelain bowls, tin tea canisters, a thermos, stack of bamboo steamers, hanging cotton towel and used ladles; small dim warm bare bulb at top middle. At left an old rectangular wooden lattice window with muted blue morning glass. Central lower space dark uncluttered for a separate character to be placed later. Rich historical everyday detail and attractive graphic composition. Wall only, NO shopkeeper, NO food bowl in front, NO counter, NO shop sign, NO storefront, NO street, NO perspective floor. Fill canvas edge to edge, no white border."
+    },
+    {
+      "id": "keeper",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Production artwork for a carefully crafted layered paper diorama of a fictional Wuhan Hankou neighborhood breakfast shop circa late 1980s. Art direction: sophisticated Chinese illustrated storybook, hand-cut paper collage with dry gouache pigment, expressive subtle woodcut linework, visible warm cotton-paper grain. Restrained palette oxblood red, indigo charcoal, muted jade, tobacco wood, ivory; beautiful bold designed shapes, NOT photorealism, NOT anime, NOT generic flat vector clipart. Warm morning light from upper left, subdued painted shadows, no hard baked outer cast shadow. No text, no watermark. Asset: single transparent-background die-cut character for 3D standing paper puppet. Chinese woman shopkeeper about 45 years old, warm candid face, natural adult proportions, gentle engaged smile, slight 3/4 turn toward viewer right. Dark indigo rolled sleeve cotton blouse, faded brick-red checked apron, tied dark hair bun, a few loose hair wisps. Both hands visible at waist level, right hand loosely holding long bamboo chopsticks pointed diagonally down toward viewer right, left hand relaxed near apron. Cropped at upper thighs with complete silhouette and generous transparent padding, no feet needed. Individualized lived-in face with expressive eyes, dignified and approachable, small wear at apron hem. Sculptural layered gouache-painted paper cutout, thin irregular ivory cut edge, richly drawn folds and anatomy, NO doll, NO clipart, NO chibi, NO anime, no bowl or counter, NO background, actual transparent alpha."
+    },
+    {
+      "id": "bowl",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Production artwork for a carefully crafted layered paper diorama of a fictional Wuhan Hankou neighborhood breakfast shop circa late 1980s. Art direction: sophisticated Chinese illustrated storybook, hand-cut paper collage with dry gouache pigment, expressive subtle woodcut linework, visible warm cotton-paper grain. Restrained palette oxblood red, indigo charcoal, muted jade, tobacco wood, ivory; beautiful bold designed shapes, NOT photorealism, NOT anime, NOT generic flat vector clipart. Warm morning light from upper left, subdued painted shadows, no hard baked outer cast shadow. No text, no watermark. Asset: one isolated beautiful ceramic bowl of Wuhan sesame-paste hot dry noodles for a paper collage foreground, actual transparent alpha background. Three-quarter view slightly from above, low wide ivory bowl with cobalt-blue hand-painted bands and simple floral motifs, signs of use on rim. Noodles are distinct golden-brown strands richly coated in sesame sauce, small diced pickled radish and chopped green scallions at top. Clearly legible food silhouette with irregular cut-paper ivory edge; layering of illustrated noodle strands, appetizing natural detail, handcrafted painted texture. Food illustration should look like a beautiful printed collectible cutout. Fully visible bowl, tightly composed with small transparent padding. No chopsticks, no table, NO steam (steam is animated separately), no lettering, no cast shadow outside bowl."
+    },
+    {
+      "id": "successor",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Production artwork for a carefully crafted layered paper diorama of a fictional Wuhan Hankou neighborhood breakfast shop circa late 1980s. Art direction: sophisticated Chinese illustrated storybook, hand-cut paper collage with dry gouache pigment, expressive subtle woodcut linework, visible warm cotton-paper grain. Restrained palette oxblood red, indigo charcoal, muted jade, tobacco wood, ivory; beautiful bold designed shapes, NOT photorealism, NOT anime, NOT generic flat vector clipart. Warm morning light from upper left, subdued painted shadows, no hard baked outer cast shadow. No text, no watermark. Asset: one transparent-background die-cut character for the PRESENT-DAY inherited version of the same shop. A Chinese woman shopkeeper about 28 years old, natural adult proportions, kind focused face, gentle smile, dark hair tied in low ponytail, slight three-quarter turn to viewer right. Muted sage-green cotton shirt with rolled sleeves and deep indigo-blue canvas apron with a small brick-red cloth repair patch. Both hands visible resting loosely at waist, one holds a pair of plain bamboo chopsticks angled down to viewer right. Crop at upper thighs, complete silhouette and generous transparent padding. Finely drawn layered gouache illustration and paper fibres, thin ivory cut edge. NO anime, no doll, no vector clipart, no background, actual transparent alpha, no external cast shadow. She is a fictional younger successor, distinguishable from the older past-era woman."
+    }
+  ],
+  "runtimeDirectory": "public/assets/atelier",
+  "originalDirectory": "docs/atelier/source-art",
+  "export": {
+    "format": "WebP",
+    "quality": 92,
+    "alphaQuality": 100,
+    "originalsPreserved": true
+  }
+}

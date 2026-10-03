@@ -1,0 +1,23 @@
+{
+  "method": "Original code-native SVG print illustrations; model geometry supplies thickness and shadows",
+  "reference": "F01–F04 (food shape), fictional character and street design",
+  "files": [
+    "chen-neutral.svg",
+    "chen-warm.svg",
+    "lin-neutral.svg",
+    "lin-warm.svg",
+    "zhou-neutral.svg",
+    "zhou-thought.svg",
+    "doupi.svg",
+    "mianwo.svg",
+    "noodle.svg",
+    "saucejar.svg",
+    "spatula.svg",
+    "stool.svg"
+  ],
+  "outlines": {
+    "lin": "M207 45 Q168 55 163 108 L158 170 Q126 178 128 212 L122 240 Q87 255 70 300 L42 508 Q31 548 61 562 L123 555 L128 697 Q241 730 368 697 L376 555 L426 561 Q461 548 450 507 L423 299 Q410 263 370 242 L348 219 L340 162 L337 109 Q330 52 275 43Z",
+    "zhou": "M178 53 Q241 20 310 48 Q340 59 346 113 L344 181 L330 222 Q330 241 374 254 L400 270 L426 330 L450 510 Q461 552 422 567 L374 554 L373 703 Q250 722 124 703 L125 557 L75 566 Q35 550 44 509 L72 331 L93 276 Q137 252 166 234 L168 203 L153 159 L155 103Z",
+    "chen": "M176 51 Q253 23 321 53 L349 100 L349 167 L333 206 L333 236 L379 256 L412 294 L447 500 Q463 546 425 563 L375 550 L373 705 Q250 724 122 705 L126 550 L72 565 Q36 549 46 507 L73 300 L100 266 L168 237 L168 206 L151 164 L154 102Z"
+  }
+}

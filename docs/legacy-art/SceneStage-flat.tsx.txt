@@ -1,0 +1,24 @@
+import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react';
+import { useStory } from '../app/StoryProvider';
+export const asset=(path:string)=>import.meta.env.BASE_URL+'assets/'+path;
+export function Steam({x=.53,y=.7}:{x?:number;y?:number}){return <div className="steam" aria-hidden="true" style={{left:x*100+'%',top:y*100+'%'}}><i/><i/><i/></div>;}
+export function SceneStage({scene,focus=.5,character,expression='neutral',children,onBack,onLoaded}:{scene:string;focus?:number;character?:string;expression?:string;children?:ReactNode;onBack:()=>void;onLoaded?:()=>void}) {
+  const stage=useRef<HTMLDivElement>(null);const [size,setSize]=useState({w:1920,h:1080});const [status,setStatus]=useState<'loading'|'ready'|'failed'>('loading');const [attempt,setAttempt]=useState(0);const {state}=useStory();
+  useLayoutEffect(()=>{const el=stage.current!;const ro=new ResizeObserver(entries=>{const b=entries[0].contentRect;setSize({w:b.width,h:b.height});});ro.observe(el);return()=>ro.disconnect();},[]);
+  useEffect(()=>{let alive=true;setStatus('loading');const paths=[asset('scenes/'+scene+'.webp'),...(character?[asset('characters/'+character+'-neutral.webp'),asset('characters/'+character+'-'+(character==='zhou'?'thought':'warm')+'.webp')]:[])];
+    const timers:ReturnType<typeof setTimeout>[]=[];
+    Promise.all(paths.map(src=>new Promise<void>((resolve,reject)=>{const img=new Image();const timer=setTimeout(reject,15000);timers.push(timer);img.onload=()=>{clearTimeout(timer);resolve();};img.onerror=()=>{clearTimeout(timer);reject();};img.src=src+(attempt?'?retry='+attempt:'');}))).then(()=>{if(alive){setStatus('ready');onLoaded?.();}}).catch(()=>{if(alive)setStatus('failed');});
+    return()=>{alive=false;timers.forEach(clearTimeout);};
+  },[scene,character,attempt]);
+  const w=Math.max(size.w,size.h*16/9),h=w*9/16;
+  const portrait=size.h>size.w;const left=(size.w-w)*(portrait?focus:.5);const top=(size.h-h)*.5;
+  const expressive=expression!=='neutral';
+  return <div ref={stage} className={'stage '+(state.settings.reducedMotion?'still':'')} data-scene={scene} data-status={status}>
+    <div className="scene-world" data-content-box style={{width:w,height:h,left,top}}>
+      <img className="scene-base" src={asset('scenes/'+scene+'.webp')} alt="" draggable={false}/>
+      {character&&<><div className="character" data-character={character}><img src={asset('characters/'+character+'-neutral.webp')} className={!expressive?'visible':''} alt=""/><img src={asset('characters/'+character+'-'+(character==='zhou'?'thought':'warm')+'.webp')} className={expressive?'visible':''} alt=""/></div><img className={'counter-mask '+scene} src={asset('scenes/'+scene+'.webp')} alt=""/></>}
+      {status==='ready'&&children}
+    </div>
+    {status!=='ready'&&<div className="loading-sheet" role="status"><span className="small-label">清晨正在展开</span><h2>{status==='loading'?'等一缕热气的时间……':'这幅画暂时没有展开'}</h2>{status==='failed'&&<><p>请重试加载，或先返回。故事进度会保留。</p><button className="primary" onClick={()=>setAttempt(n=>n+1)}>重试加载</button><button className="text-button" onClick={onBack}>返回</button></>}</div>}
+  </div>;
+}

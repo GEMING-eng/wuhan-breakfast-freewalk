@@ -1,0 +1,55 @@
+{
+  "viewport": {
+    "width": 1366,
+    "height": 768,
+    "dpr": 1.0000000149011612
+  },
+  "state": {
+    "saveVersion": 1,
+    "started": true,
+    "screen": "shop",
+    "shopId": "doupi",
+    "dialogueNodeId": "d_menu",
+    "stableCheckpoint": {
+      "screen": "shop",
+      "shopId": "doupi",
+      "dialogueNodeId": "d_menu"
+    },
+    "observed": {
+      "sauceJar": true,
+      "spatula": true,
+      "stool": true
+    },
+    "topicsRead": {
+      "n_follow": true,
+      "d_follow": true,
+      "m_follow": true
+    },
+    "completed": {
+      "noodle": true,
+      "doupi": true,
+      "mianwo": true
+    },
+    "visited": {
+      "noodle": true,
+      "doupi": true,
+      "mianwo": true
+    },
+    "shopNodes": {
+      "noodle": "n_menu",
+      "doupi": "d_menu",
+      "mianwo": "m_menu"
+    },
+    "endingSeen": "complete",
+    "invitationSeen": true,
+    "settings": {
+      "muted": false,
+      "volume": 0.1,
+      "reducedMotion": false,
+      "instantText": true,
+      "lowPerformance": false
+    }
+  },
+  "text": "“\n与周师傅聊聊\n·\n看看豆皮\n+\n观察旧锅铲\n←\n返回老街\n我的过早\n3 / 3\n♪\n☷\n豆皮铺\n创作对白\n周师傅\n\n慢慢看，想聊哪一件事？\n慢慢看，想聊哪一件事？\n\n豆皮里是什么？\n↗\n怎么知道这一锅好了？\n↗\n刚才看到的……\n这把旧锅铲为什么还留着？\n↻\n我先看看店里\n→\n\n已记下，可继续聊或回到街上\n\n一口锅，慢慢看出分寸\n资料与创作说明 ↗",
+  "renderer": "shop-doupi-landscape"
+}

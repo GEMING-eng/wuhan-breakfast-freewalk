@@ -1,0 +1,55 @@
+{
+  "viewport": {
+    "width": 932,
+    "height": 430,
+    "dpr": 1.0000000149011612
+  },
+  "state": {
+    "saveVersion": 1,
+    "started": true,
+    "screen": "shop",
+    "shopId": "noodle",
+    "dialogueNodeId": "n_menu",
+    "stableCheckpoint": {
+      "screen": "shop",
+      "shopId": "noodle",
+      "dialogueNodeId": "n_menu"
+    },
+    "observed": {
+      "sauceJar": true,
+      "spatula": true,
+      "stool": true
+    },
+    "topicsRead": {
+      "n_follow": true,
+      "d_follow": true,
+      "m_follow": true
+    },
+    "completed": {
+      "noodle": true,
+      "doupi": true,
+      "mianwo": true
+    },
+    "visited": {
+      "noodle": true,
+      "doupi": true,
+      "mianwo": true
+    },
+    "shopNodes": {
+      "noodle": "n_menu",
+      "doupi": "d_menu",
+      "mianwo": "m_menu"
+    },
+    "endingSeen": "complete",
+    "invitationSeen": true,
+    "settings": {
+      "muted": false,
+      "volume": 0.1,
+      "reducedMotion": false,
+      "instantText": true,
+      "lowPerformance": false
+    }
+  },
+  "text": "“\n与林姐聊聊\n·\n看看热干面\n+\n观察芝麻酱罐\n←\n返回老街\n我的过早\n3 / 3\n♪\n☷\n热干面铺\n创作对白\n林姐\n\n慢慢看，想聊哪一件事？\n慢慢看，想聊哪一件事？\n\n为什么大家说“过早”？\n↗\n这碗面的香从哪里来？\n↗\n刚才看到的……\n你怎么记住每个人的口味？\n↻\n我先看看店里\n→\n\n已记下，可继续聊或回到街上\n\n一碗面，唤醒一天\n资料与创作说明 ↗",
+  "renderer": "shop-noodle-landscape"
+}

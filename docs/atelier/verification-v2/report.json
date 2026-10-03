@@ -1,0 +1,99 @@
+{
+  "url": "http://127.0.0.1:4173/?sample=noodle",
+  "checks": [
+    {
+      "name": "camera-follows-bowl",
+      "passed": true,
+      "magnification": 5.500591249507292,
+      "distance": 2.537,
+      "target": "0.51,2.14,1.70"
+    },
+    {
+      "name": "camera-follows-jar",
+      "passed": true,
+      "magnification": 6.874384236453203,
+      "distance": 2.03,
+      "target": "-1.76,2.13,1.10"
+    },
+    {
+      "name": "camera-follows-stool",
+      "passed": true,
+      "magnification": 5.677379983726607,
+      "distance": 2.458,
+      "target": "-2.94,0.53,2.08"
+    },
+    {
+      "name": "camera-follows-keeper",
+      "passed": true,
+      "magnification": 3.66657908565423,
+      "distance": 3.806,
+      "target": "-0.38,3.14,0.30"
+    },
+    {
+      "name": "generated-speaking-and-blink-frames",
+      "passed": true,
+      "frames": [
+        "2",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "name": "wall-rotates-180-and-camera-resets",
+      "passed": true
+    },
+    {
+      "name": "paper-layers-open",
+      "passed": true
+    },
+    {
+      "name": "rapid-switch-settles-consistently",
+      "passed": true
+    },
+    {
+      "name": "mobile-focus-and-no-overflow",
+      "passed": true
+    },
+    {
+      "name": "motion-off-stays-still",
+      "passed": true,
+      "changedPixels": 0
+    },
+    {
+      "name": "reduced-motion-era-snap",
+      "passed": true
+    },
+    {
+      "name": "dialog-opens",
+      "passed": true
+    },
+    {
+      "name": "memory-persists",
+      "passed": true
+    },
+    {
+      "name": "prefers-reduced-motion",
+      "passed": true
+    },
+    {
+      "name": "original-story-preserved",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "motion": "on",
+    "era": "past",
+    "portraitFrame": "0",
+    "speaking": "false",
+    "wallAngle": "0.0",
+    "drawCalls": "443",
+    "triangles": "89946",
+    "layers": "8",
+    "status": "ready",
+    "cameraDistance": "13.955",
+    "cameraSettled": "true",
+    "cameraTarget": "0.00,3.05,0.00"
+  },
+  "turningAngle": "12.4"
+}

@@ -1,0 +1,47 @@
+{
+  "viewport": {
+    "width": 1170,
+    "height": 1003,
+    "dpr": 1.25
+  },
+  "state": {
+    "saveVersion": 1,
+    "started": true,
+    "screen": "shop",
+    "shopId": "noodle",
+    "dialogueNodeId": "n_menu",
+    "stableCheckpoint": {
+      "screen": "shop",
+      "shopId": "noodle",
+      "dialogueNodeId": "n_menu"
+    },
+    "observed": {
+      "sauceJar": false,
+      "spatula": false,
+      "stool": false
+    },
+    "topicsRead": {},
+    "completed": {
+      "noodle": false,
+      "doupi": false,
+      "mianwo": false
+    },
+    "visited": {
+      "noodle": true
+    },
+    "shopNodes": {
+      "noodle": "n_menu"
+    },
+    "endingSeen": null,
+    "invitationSeen": false,
+    "settings": {
+      "muted": false,
+      "volume": 0.1,
+      "reducedMotion": false,
+      "instantText": true,
+      "lowPerformance": false
+    }
+  },
+  "text": "“\n与林姐聊聊\n·\n看看热干面\n+\n观察芝麻酱罐\n←\n返回老街\n我的过早\n0 / 3\n♪\n☷\n热干面铺\n创作对白\n林姐\n\n慢慢看，想聊哪一件事？\n慢慢看，想聊哪一件事？\n\n为什么大家说“过早”？\n↗\n这碗面的香从哪里来？\n↗\n我先看看店里\n→\n\n聊天 · 看食物 · 观察旧物\n\n一碗面，唤醒一天\n资料与创作说明 ↗",
+  "renderer": "shop-noodle-landscape"
+}

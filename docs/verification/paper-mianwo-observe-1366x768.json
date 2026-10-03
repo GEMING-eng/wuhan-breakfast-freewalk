@@ -1,0 +1,5099 @@
+{
+  "scene": "mianwo-shop",
+  "camera": "observe-mianwo-landscape",
+  "position": [
+    4.38,
+    1.48,
+    5.88
+  ],
+  "target": [
+    4.43,
+    0.53,
+    2.28
+  ],
+  "parts": [
+    {
+      "id": "ground-paper",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        -0.13,
+        0.15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.16,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0,
+        -0.13,
+        0.15
+      ],
+      "visible": true
+    },
+    {
+      "id": "rear-fold",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        2.95,
+        -2.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.08,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0,
+        2.95,
+        -2.5
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-house-0",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        -7,
+        0,
+        -2.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -7,
+        0,
+        -2.3
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-window-0-0",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -7.6,
+        2.6,
+        -2.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.035,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -7.6,
+        2.6,
+        -2.22
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-window-0-1",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -6.3999999999999995,
+        2.6,
+        -2.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.035,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -6.3999999999999995,
+        2.6,
+        -2.22
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-house-1",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        -4.2,
+        0,
+        -2.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -4.2,
+        0,
+        -2.3
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-window-1-0",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -4.8,
+        2.6,
+        -2.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.035,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -4.8,
+        2.6,
+        -2.22
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-window-1-1",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -3.5999999999999996,
+        2.6,
+        -2.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.035,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -3.5999999999999996,
+        2.6,
+        -2.22
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-house-2",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        -1.4000000000000004,
+        0,
+        -2.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -1.4000000000000004,
+        0,
+        -2.3
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-window-2-0",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -2.0000000000000004,
+        2.6,
+        -2.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.035,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -2.0000000000000004,
+        2.6,
+        -2.22
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-window-2-1",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -0.8000000000000005,
+        2.6,
+        -2.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.035,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -0.8000000000000005,
+        2.6,
+        -2.22
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-house-3",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        1.3999999999999986,
+        0,
+        -2.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        1.3999999999999986,
+        0,
+        -2.3
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-window-3-0",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.7999999999999986,
+        2.6,
+        -2.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.035,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0.7999999999999986,
+        2.6,
+        -2.22
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-window-3-1",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        1.9999999999999987,
+        2.6,
+        -2.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.035,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        1.9999999999999987,
+        2.6,
+        -2.22
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-house-4",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        4.199999999999999,
+        0,
+        -2.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        4.199999999999999,
+        0,
+        -2.3
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-window-4-0",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        3.599999999999999,
+        2.6,
+        -2.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.035,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        3.599999999999999,
+        2.6,
+        -2.22
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-window-4-1",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        4.799999999999999,
+        2.6,
+        -2.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.035,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        4.799999999999999,
+        2.6,
+        -2.22
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-house-5",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        7,
+        0,
+        -2.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        7,
+        0,
+        -2.3
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-window-5-0",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        6.4,
+        2.6,
+        -2.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.035,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        6.4,
+        2.6,
+        -2.22
+      ],
+      "visible": true
+    },
+    {
+      "id": "distant-window-5-1",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        7.6000000000000005,
+        2.6,
+        -2.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.035,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        7.6000000000000005,
+        2.6,
+        -2.22
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-backwall",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        1.8,
+        -1.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.08,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -4.5,
+        1.8,
+        -1.12
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-left-return",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -2.13,
+        1.8,
+        -0.53
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.09,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -6.63,
+        1.8,
+        -0.53
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-right-return",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        2.13,
+        1.8,
+        -0.53
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.09,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -2.37,
+        1.8,
+        -0.53
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-door-post--2.02",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -2.02,
+        1.78,
+        0.08
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.16,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -6.52,
+        1.78,
+        0.08
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-door-post-2.02",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        2.02,
+        1.78,
+        0.08
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.16,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -2.48,
+        1.78,
+        0.08
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-door-lintel",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        3.5,
+        0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.18,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -4.5,
+        3.5,
+        0.1
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-roof",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        3.78,
+        -0.43
+      ],
+      "rotation": [
+        0.14,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.08,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -4.5,
+        3.78,
+        -0.43
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-folded-awning",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        3.29,
+        0.72
+      ],
+      "rotation": [
+        0.2,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.06,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -4.5,
+        3.29,
+        0.72
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-awning-valance",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0,
+        3.13,
+        1.47
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.045,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -4.5,
+        3.13,
+        1.47
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-shop-sign",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        3.88,
+        1.55
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -4.5,
+        3.88,
+        1.55
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-counter",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        0.67,
+        1.04
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 1.04,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -4.5,
+        0.67,
+        1.04
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-counter-top",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        1.33,
+        1.02
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.09,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -4.5,
+        1.33,
+        1.02
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-counter-seam--1.6",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -1.6,
+        0.64,
+        1.585
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.019,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -6.1,
+        0.64,
+        1.585
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-counter-seam--0.82",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -0.82,
+        0.64,
+        1.585
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.019,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -5.32,
+        0.64,
+        1.585
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-counter-seam-0",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        0.64,
+        1.585
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.019,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -4.5,
+        0.64,
+        1.585
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-counter-seam-0.82",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.82,
+        0.64,
+        1.585
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.019,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -3.68,
+        0.64,
+        1.585
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-counter-seam-1.6",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        1.6,
+        0.64,
+        1.585
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.019,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -2.9,
+        0.64,
+        1.585
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-shelf-top",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.85,
+        2.68,
+        -0.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.065,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -3.65,
+        2.68,
+        -0.76
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-shelf-low",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.85,
+        2,
+        -0.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.065,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -3.65,
+        2,
+        -0.76
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-shelf-bowl-0-0",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.27,
+        2.1,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -4.23,
+        2.1,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-bowl-blue-0-0",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.27,
+        2.09,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -4.23,
+        2.09,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-shelf-bowl-0-1",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.75,
+        2.1,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -3.75,
+        2.1,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-bowl-blue-0-1",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.75,
+        2.09,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -3.75,
+        2.09,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-shelf-bowl-0-2",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        1.23,
+        2.1,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -3.27,
+        2.1,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-bowl-blue-0-2",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        1.23,
+        2.09,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -3.27,
+        2.09,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-shelf-bowl-1-0",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.27,
+        2.7800000000000002,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -4.23,
+        2.7800000000000002,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-bowl-blue-1-0",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.27,
+        2.77,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -4.23,
+        2.77,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-shelf-bowl-1-1",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.75,
+        2.7800000000000002,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -3.75,
+        2.7800000000000002,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-bowl-blue-1-1",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.75,
+        2.77,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -3.75,
+        2.77,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-shelf-bowl-1-2",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        1.23,
+        2.7800000000000002,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -3.27,
+        2.7800000000000002,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-bowl-blue-1-2",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        1.23,
+        2.77,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -3.27,
+        2.77,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-window-frame",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -1.22,
+        2.35,
+        -0.985
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -5.72,
+        2.35,
+        -0.985
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-window-pane",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -1.22,
+        2.35,
+        -0.94
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.04,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -5.72,
+        2.35,
+        -0.94
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-window-bar",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -1.22,
+        2.35,
+        -0.9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.045,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -5.72,
+        2.35,
+        -0.9
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-paper-owner",
+      "assetId": "noodle-paper-owner",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        -0.82,
+        1.95,
+        0.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": "character-noodle",
+      "worldPosition": [
+        -5.32,
+        1.95,
+        0.3
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-food",
+      "assetId": "noodle-food",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.62,
+        1.61,
+        1.57
+      ],
+      "rotation": [
+        0,
+        -0.04,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": "food-noodle",
+      "worldPosition": [
+        -3.88,
+        1.61,
+        1.57
+      ],
+      "visible": true
+    },
+    {
+      "id": "sauce-jar",
+      "assetId": "sauce-jar",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        -0.91,
+        1.62,
+        1.57
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": "observe-noodle",
+      "worldPosition": [
+        -5.41,
+        1.62,
+        1.57
+      ],
+      "visible": true
+    },
+    {
+      "id": "noodle-cooking-pan",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        1.13,
+        1.46,
+        0.93
+      ],
+      "rotation": [
+        0,
+        0.07,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.18,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -3.37,
+        1.46,
+        0.93
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-backwall",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        1.8,
+        -1.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.08,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0,
+        1.8,
+        -1.12
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-left-return",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -2.13,
+        1.8,
+        -0.53
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.09,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -2.13,
+        1.8,
+        -0.53
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-right-return",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        2.13,
+        1.8,
+        -0.53
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.09,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        2.13,
+        1.8,
+        -0.53
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-door-post--2.02",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -2.02,
+        1.78,
+        0.08
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.16,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -2.02,
+        1.78,
+        0.08
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-door-post-2.02",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        2.02,
+        1.78,
+        0.08
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.16,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        2.02,
+        1.78,
+        0.08
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-door-lintel",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        3.5,
+        0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.18,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0,
+        3.5,
+        0.1
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-roof",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        3.78,
+        -0.43
+      ],
+      "rotation": [
+        0.14,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.08,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0,
+        3.78,
+        -0.43
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-folded-awning",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        3.29,
+        0.72
+      ],
+      "rotation": [
+        0.2,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.06,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0,
+        3.29,
+        0.72
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-awning-valance",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0,
+        3.13,
+        1.47
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.045,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0,
+        3.13,
+        1.47
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-shop-sign",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        3.88,
+        1.55
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0,
+        3.88,
+        1.55
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-counter",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        0.67,
+        1.04
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 1.04,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0,
+        0.67,
+        1.04
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-counter-top",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        1.33,
+        1.02
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.09,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0,
+        1.33,
+        1.02
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-counter-seam--1.6",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -1.6,
+        0.64,
+        1.585
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.019,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -1.6,
+        0.64,
+        1.585
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-counter-seam--0.82",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -0.82,
+        0.64,
+        1.585
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.019,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -0.82,
+        0.64,
+        1.585
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-counter-seam-0",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        0.64,
+        1.585
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.019,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0,
+        0.64,
+        1.585
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-counter-seam-0.82",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.82,
+        0.64,
+        1.585
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.019,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0.82,
+        0.64,
+        1.585
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-counter-seam-1.6",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        1.6,
+        0.64,
+        1.585
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.019,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        1.6,
+        0.64,
+        1.585
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-shelf-top",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.85,
+        2.68,
+        -0.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.065,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0.85,
+        2.68,
+        -0.76
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-shelf-low",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.85,
+        2,
+        -0.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.065,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0.85,
+        2,
+        -0.76
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-shelf-bowl-0-0",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.27,
+        2.1,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0.27,
+        2.1,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-bowl-blue-0-0",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.27,
+        2.09,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0.27,
+        2.09,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-shelf-bowl-0-1",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.75,
+        2.1,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0.75,
+        2.1,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-bowl-blue-0-1",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.75,
+        2.09,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0.75,
+        2.09,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-shelf-bowl-0-2",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        1.23,
+        2.1,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        1.23,
+        2.1,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-bowl-blue-0-2",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        1.23,
+        2.09,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        1.23,
+        2.09,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-shelf-bowl-1-0",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.27,
+        2.7800000000000002,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0.27,
+        2.7800000000000002,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-bowl-blue-1-0",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.27,
+        2.77,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0.27,
+        2.77,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-shelf-bowl-1-1",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.75,
+        2.7800000000000002,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0.75,
+        2.7800000000000002,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-bowl-blue-1-1",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.75,
+        2.77,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        0.75,
+        2.77,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-shelf-bowl-1-2",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        1.23,
+        2.7800000000000002,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        1.23,
+        2.7800000000000002,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-bowl-blue-1-2",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        1.23,
+        2.77,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        1.23,
+        2.77,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-window-frame",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -1.22,
+        2.35,
+        -0.985
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -1.22,
+        2.35,
+        -0.985
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-window-pane",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -1.22,
+        2.35,
+        -0.94
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.04,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -1.22,
+        2.35,
+        -0.94
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-window-bar",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -1.22,
+        2.35,
+        -0.9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.045,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -1.22,
+        2.35,
+        -0.9
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-paper-owner",
+      "assetId": "doupi-paper-owner",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        -0.82,
+        1.95,
+        0.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": "character-doupi",
+      "worldPosition": [
+        -0.82,
+        1.95,
+        0.3
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-food",
+      "assetId": "doupi-food",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.62,
+        1.61,
+        1.57
+      ],
+      "rotation": [
+        0,
+        -0.04,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": "food-doupi",
+      "worldPosition": [
+        0.62,
+        1.61,
+        1.57
+      ],
+      "visible": true
+    },
+    {
+      "id": "old-spatula",
+      "assetId": "old-spatula",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        -0.02,
+        2.14,
+        -0.79
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": "observe-doupi",
+      "worldPosition": [
+        -0.02,
+        2.14,
+        -0.79
+      ],
+      "visible": true
+    },
+    {
+      "id": "doupi-cooking-pan",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        1.13,
+        1.46,
+        0.93
+      ],
+      "rotation": [
+        0,
+        0.07,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.18,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        1.13,
+        1.46,
+        0.93
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-backwall",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        1.8,
+        -1.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.08,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        4.5,
+        1.8,
+        -1.12
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-left-return",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -2.13,
+        1.8,
+        -0.53
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.09,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        2.37,
+        1.8,
+        -0.53
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-right-return",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        2.13,
+        1.8,
+        -0.53
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.09,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        6.63,
+        1.8,
+        -0.53
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-door-post--2.02",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -2.02,
+        1.78,
+        0.08
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.16,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        2.48,
+        1.78,
+        0.08
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-door-post-2.02",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        2.02,
+        1.78,
+        0.08
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.16,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        6.52,
+        1.78,
+        0.08
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-door-lintel",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        3.5,
+        0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.18,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        4.5,
+        3.5,
+        0.1
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-roof",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        3.78,
+        -0.43
+      ],
+      "rotation": [
+        0.14,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.08,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        4.5,
+        3.78,
+        -0.43
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-folded-awning",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        3.29,
+        0.72
+      ],
+      "rotation": [
+        0.2,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.06,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        4.5,
+        3.29,
+        0.72
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-awning-valance",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0,
+        3.13,
+        1.47
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.045,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        4.5,
+        3.13,
+        1.47
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-shop-sign",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        3.88,
+        1.55
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        4.5,
+        3.88,
+        1.55
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-counter",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        0.67,
+        1.04
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 1.04,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        4.5,
+        0.67,
+        1.04
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-counter-top",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        1.33,
+        1.02
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.09,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        4.5,
+        1.33,
+        1.02
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-counter-seam--1.6",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -1.6,
+        0.64,
+        1.585
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.019,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        2.9,
+        0.64,
+        1.585
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-counter-seam--0.82",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -0.82,
+        0.64,
+        1.585
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.019,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        3.68,
+        0.64,
+        1.585
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-counter-seam-0",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        0.64,
+        1.585
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.019,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        4.5,
+        0.64,
+        1.585
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-counter-seam-0.82",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.82,
+        0.64,
+        1.585
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.019,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        5.32,
+        0.64,
+        1.585
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-counter-seam-1.6",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        1.6,
+        0.64,
+        1.585
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.019,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        6.1,
+        0.64,
+        1.585
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-shelf-top",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.85,
+        2.68,
+        -0.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.065,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        5.35,
+        2.68,
+        -0.76
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-shelf-low",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.85,
+        2,
+        -0.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.065,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        5.35,
+        2,
+        -0.76
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-shelf-bowl-0-0",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.27,
+        2.1,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        4.77,
+        2.1,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-bowl-blue-0-0",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.27,
+        2.09,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        4.77,
+        2.09,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-shelf-bowl-0-1",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.75,
+        2.1,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        5.25,
+        2.1,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-bowl-blue-0-1",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.75,
+        2.09,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        5.25,
+        2.09,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-shelf-bowl-0-2",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        1.23,
+        2.1,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        5.73,
+        2.1,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-bowl-blue-0-2",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        1.23,
+        2.09,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        5.73,
+        2.09,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-shelf-bowl-1-0",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.27,
+        2.7800000000000002,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        4.77,
+        2.7800000000000002,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-bowl-blue-1-0",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.27,
+        2.77,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        4.77,
+        2.77,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-shelf-bowl-1-1",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.75,
+        2.7800000000000002,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        5.25,
+        2.7800000000000002,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-bowl-blue-1-1",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.75,
+        2.77,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        5.25,
+        2.77,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-shelf-bowl-1-2",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        1.23,
+        2.7800000000000002,
+        -0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.025,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        5.73,
+        2.7800000000000002,
+        -0.7
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-bowl-blue-1-2",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        1.23,
+        2.77,
+        -0.661
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.017,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        5.73,
+        2.77,
+        -0.661
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-window-frame",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -1.22,
+        2.35,
+        -0.985
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        3.2800000000000002,
+        2.35,
+        -0.985
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-window-pane",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -1.22,
+        2.35,
+        -0.94
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.04,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        3.2800000000000002,
+        2.35,
+        -0.94
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-window-bar",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -1.22,
+        2.35,
+        -0.9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.045,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        3.2800000000000002,
+        2.35,
+        -0.9
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-paper-owner",
+      "assetId": "mianwo-paper-owner",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        -0.82,
+        1.95,
+        0.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": "character-mianwo",
+      "worldPosition": [
+        3.68,
+        1.95,
+        0.3
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-food",
+      "assetId": "mianwo-food",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.62,
+        1.61,
+        1.57
+      ],
+      "rotation": [
+        0,
+        -0.04,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.055,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": "food-mianwo",
+      "worldPosition": [
+        5.12,
+        1.61,
+        1.57
+      ],
+      "visible": true
+    },
+    {
+      "id": "stool-seat",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        0.69,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.075,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": "observe-mianwo",
+      "worldPosition": [
+        3.7800000000000002,
+        0.69,
+        2.28
+      ],
+      "visible": true
+    },
+    {
+      "id": "stool-leg--0.31--0.22",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -0.31,
+        0.34,
+        -0.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0.052700000000000004
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.085,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": "observe-mianwo",
+      "worldPosition": [
+        3.47,
+        0.34,
+        2.0599999999999996
+      ],
+      "visible": true
+    },
+    {
+      "id": "stool-leg--0.31-0.22",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        -0.31,
+        0.34,
+        0.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0.052700000000000004
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.085,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": "observe-mianwo",
+      "worldPosition": [
+        3.47,
+        0.34,
+        2.5
+      ],
+      "visible": true
+    },
+    {
+      "id": "stool-leg-0.31--0.22",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.31,
+        0.34,
+        -0.22
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.052700000000000004
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.085,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": "observe-mianwo",
+      "worldPosition": [
+        4.09,
+        0.34,
+        2.0599999999999996
+      ],
+      "visible": true
+    },
+    {
+      "id": "stool-leg-0.31-0.22",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0.31,
+        0.34,
+        0.22
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.052700000000000004
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.085,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": "observe-mianwo",
+      "worldPosition": [
+        4.09,
+        0.34,
+        2.5
+      ],
+      "visible": true
+    },
+    {
+      "id": "stool-brace",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        0.27,
+        0.23
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.07,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": "observe-mianwo",
+      "worldPosition": [
+        3.7800000000000002,
+        0.27,
+        2.51
+      ],
+      "visible": true
+    },
+    {
+      "id": "mianwo-cooking-pan",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        1.13,
+        1.46,
+        0.93
+      ],
+      "rotation": [
+        0,
+        0.07,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.18,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        5.63,
+        1.46,
+        0.93
+      ],
+      "visible": true
+    },
+    {
+      "id": "plant-trunk--7.3",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        2.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.08,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -7.3,
+        2.2,
+        1.8
+      ],
+      "visible": true
+    },
+    {
+      "id": "leaf--7.3-0",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        -0.1,
+        1.9,
+        0.04
+      ],
+      "rotation": [
+        0,
+        0,
+        0.35
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.03,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -7.3999999999999995,
+        1.9,
+        1.84
+      ],
+      "visible": true
+    },
+    {
+      "id": "leaf--7.3-1",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.32,
+        2.23,
+        0.06
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.45
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.03,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -6.9799999999999995,
+        2.23,
+        1.86
+      ],
+      "visible": true
+    },
+    {
+      "id": "leaf--7.3-2",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        -0.1,
+        2.56,
+        0.08
+      ],
+      "rotation": [
+        0,
+        0,
+        0.35
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.03,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -7.3999999999999995,
+        2.56,
+        1.8800000000000001
+      ],
+      "visible": true
+    },
+    {
+      "id": "leaf--7.3-3",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.32,
+        2.8899999999999997,
+        0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.45
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.03,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -6.9799999999999995,
+        2.8899999999999997,
+        1.9000000000000001
+      ],
+      "visible": true
+    },
+    {
+      "id": "leaf--7.3-4",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        -0.1,
+        3.2199999999999998,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0.35
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.03,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -7.3999999999999995,
+        3.2199999999999998,
+        1.92
+      ],
+      "visible": true
+    },
+    {
+      "id": "leaf--7.3-5",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.32,
+        3.55,
+        0.14
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.45
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.03,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -6.9799999999999995,
+        3.55,
+        1.94
+      ],
+      "visible": true
+    },
+    {
+      "id": "leaf--7.3-6",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        -0.1,
+        3.88,
+        0.16
+      ],
+      "rotation": [
+        0,
+        0,
+        0.35
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.03,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        -7.3999999999999995,
+        3.88,
+        1.96
+      ],
+      "visible": true
+    },
+    {
+      "id": "plant-trunk-7.3",
+      "assetId": "procedural-paper",
+      "geometryType": "BoxGeometry",
+      "position": [
+        0,
+        2.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.08,
+      "frontMaterial": "paper-print",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        7.3,
+        2.2,
+        1.8
+      ],
+      "visible": true
+    },
+    {
+      "id": "leaf-7.3-0",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        -0.1,
+        1.9,
+        0.04
+      ],
+      "rotation": [
+        0,
+        0,
+        0.35
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.03,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        7.2,
+        1.9,
+        1.84
+      ],
+      "visible": true
+    },
+    {
+      "id": "leaf-7.3-1",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.32,
+        2.23,
+        0.06
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.45
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.03,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        7.62,
+        2.23,
+        1.86
+      ],
+      "visible": true
+    },
+    {
+      "id": "leaf-7.3-2",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        -0.1,
+        2.56,
+        0.08
+      ],
+      "rotation": [
+        0,
+        0,
+        0.35
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.03,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        7.2,
+        2.56,
+        1.8800000000000001
+      ],
+      "visible": true
+    },
+    {
+      "id": "leaf-7.3-3",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.32,
+        2.8899999999999997,
+        0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.45
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.03,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        7.62,
+        2.8899999999999997,
+        1.9000000000000001
+      ],
+      "visible": true
+    },
+    {
+      "id": "leaf-7.3-4",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        -0.1,
+        3.2199999999999998,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0.35
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.03,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        7.2,
+        3.2199999999999998,
+        1.92
+      ],
+      "visible": true
+    },
+    {
+      "id": "leaf-7.3-5",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        0.32,
+        3.55,
+        0.14
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.45
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.03,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        7.62,
+        3.55,
+        1.94
+      ],
+      "visible": true
+    },
+    {
+      "id": "leaf-7.3-6",
+      "assetId": "procedural-paper",
+      "geometryType": "ExtrudeGeometry",
+      "position": [
+        -0.1,
+        3.88,
+        0.16
+      ],
+      "rotation": [
+        0,
+        0,
+        0.35
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "thickness": 0.03,
+      "frontMaterial": "printed-front",
+      "backMaterial": "warm cream paper edge",
+      "castShadow": true,
+      "receiveShadow": true,
+      "interactionId": null,
+      "worldPosition": [
+        7.2,
+        3.88,
+        1.96
+      ],
+      "visible": true
+    }
+  ],
+  "viewport": {
+    "width": 1366,
+    "height": 768,
+    "dpr": 1.0000000149011612,
+    "canvas": [
+      1366,
+      768
+    ]
+  },
+  "anchors": [
+    {
+      "id": "shop-noodle",
+      "world": [
+        -4.5,
+        2.38,
+        1.05
+      ],
+      "visible": false
+    },
+    {
+      "id": "character-noodle",
+      "world": [
+        -5.970000000000001,
+        2.51,
+        0.4
+      ],
+      "visible": false
+    },
+    {
+      "id": "food-noodle",
+      "world": [
+        -3.883599040076797,
+        1.6600000000000001,
+        1.6599280095994882
+      ],
+      "visible": false
+    },
+    {
+      "id": "observe-noodle",
+      "world": [
+        -5.41,
+        1.62,
+        1.6600000000000001
+      ],
+      "visible": false
+    },
+    {
+      "id": "shop-doupi",
+      "world": [
+        0,
+        2.38,
+        1.05
+      ],
+      "visible": false
+    },
+    {
+      "id": "character-doupi",
+      "world": [
+        -1.47,
+        2.51,
+        0.4
+      ],
+      "visible": false
+    },
+    {
+      "id": "food-doupi",
+      "world": [
+        0.6164009599232029,
+        1.6600000000000001,
+        1.6599280095994882
+      ],
+      "visible": false
+    },
+    {
+      "id": "observe-doupi",
+      "world": [
+        -0.02,
+        2.14,
+        -0.7000000000000001
+      ],
+      "visible": false
+    },
+    {
+      "id": "shop-mianwo",
+      "world": [
+        4.5,
+        2.38,
+        1.05
+      ],
+      "visible": false
+    },
+    {
+      "id": "character-mianwo",
+      "world": [
+        3.0300000000000002,
+        2.51,
+        0.4
+      ],
+      "visible": false
+    },
+    {
+      "id": "food-mianwo",
+      "world": [
+        5.116400959923203,
+        1.6600000000000001,
+        1.6599280095994882
+      ],
+      "visible": false
+    },
+    {
+      "id": "observe-mianwo",
+      "world": [
+        3.7800000000000002,
+        0.73,
+        2.4
+      ],
+      "visible": false
+    }
+  ],
+  "renderers": 1,
+  "drawCalls": 268,
+  "triangles": 5340,
+  "lowPerformance": false
+}

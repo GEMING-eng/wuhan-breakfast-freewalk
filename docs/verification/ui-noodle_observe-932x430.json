@@ -1,0 +1,56 @@
+{
+  "viewport": {
+    "width": 932,
+    "height": 430,
+    "dpr": 1.0000000149011612
+  },
+  "state": {
+    "saveVersion": 1,
+    "started": true,
+    "screen": "shop",
+    "shopId": "noodle",
+    "dialogueNodeId": "n_menu",
+    "stableCheckpoint": {
+      "screen": "shop",
+      "shopId": "noodle",
+      "dialogueNodeId": "n_menu"
+    },
+    "observed": {
+      "sauceJar": true,
+      "spatula": true,
+      "stool": true
+    },
+    "topicsRead": {
+      "n_follow": true,
+      "d_follow": true,
+      "m_follow": true
+    },
+    "completed": {
+      "noodle": true,
+      "doupi": true,
+      "mianwo": true
+    },
+    "visited": {
+      "noodle": true,
+      "doupi": true,
+      "mianwo": true
+    },
+    "shopNodes": {
+      "noodle": "n_menu",
+      "doupi": "d_menu",
+      "mianwo": "m_menu"
+    },
+    "endingSeen": "complete",
+    "invitationSeen": true,
+    "settings": {
+      "muted": false,
+      "volume": 0.1,
+      "reducedMotion": false,
+      "instantText": true,
+      "lowPerformance": false
+    }
+  },
+  "overlay": "modal-title",
+  "text": "←\n返回老街\n我的过早\n3 / 3\n♪\n☷\n一碗面，唤醒一天\n资料与创作说明 ↗",
+  "renderer": "observe-noodle-landscape"
+}

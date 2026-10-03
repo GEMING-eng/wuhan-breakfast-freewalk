@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "name": "present-deep-link",
+      "passed": true
+    },
+    {
+      "name": "street-to-shop-keeps-era",
+      "passed": true
+    },
+    {
+      "name": "shop-to-street-keeps-era",
+      "passed": true
+    },
+    {
+      "name": "touch-device-render-budget",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

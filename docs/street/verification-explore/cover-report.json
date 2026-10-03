@@ -1,0 +1,27 @@
+{
+  "errors": [],
+  "views": [
+    {
+      "width": 1440,
+      "height": 960,
+      "lines": 2,
+      "overflow": false,
+      "entryVisible": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lines": 2,
+      "overflow": false,
+      "entryVisible": true
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "lines": 2,
+      "overflow": false,
+      "entryVisible": true
+    }
+  ],
+  "reservedPlots": "3"
+}

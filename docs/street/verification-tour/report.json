@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-03",
+  "checks": [
+    {
+      "name": "first-person-eye-level",
+      "passed": true
+    },
+    {
+      "name": "look-around-turns-head-without-orbiting",
+      "passed": true
+    },
+    {
+      "name": "walking-moves-at-ground-level",
+      "passed": true,
+      "samples": [
+        "0.382,2.450,20.000",
+        "0.320,2.450,20.000",
+        "0.250,2.450,20.000",
+        "0.148,2.450,20.000",
+        "0.000,2.450,19.980",
+        "0.000,2.450,19.819",
+        "0.000,2.450,19.641",
+        "0.000,2.450,19.429",
+        "0.000,2.450,19.117",
+        "0.000,2.450,18.838",
+        "0.000,2.450,18.540",
+        "0.000,2.450,18.243"
+      ]
+    },
+    {
+      "name": "page-specific-primary-source-visible",
+      "passed": true
+    },
+    {
+      "name": "food-must-be-recorded",
+      "passed": true
+    },
+    {
+      "name": "comparison-is-deliberate",
+      "passed": true
+    },
+    {
+      "name": "comparison-unlocks-after-real-transition",
+      "passed": true
+    },
+    {
+      "name": "tour-stationery-changes-with-era",
+      "passed": true
+    },
+    {
+      "name": "three-food-notes-recorded",
+      "passed": true
+    },
+    {
+      "name": "resume-offered",
+      "passed": true
+    },
+    {
+      "name": "resume-keeps-stop-food-and-era",
+      "passed": true
+    },
+    {
+      "name": "memory-choice-required",
+      "passed": true
+    },
+    {
+      "name": "full-route-reaches-journal",
+      "passed": true
+    },
+    {
+      "name": "journal-export-has-memory-and-sources",
+      "passed": true
+    },
+    {
+      "name": "completed-journal-restores",
+      "passed": true
+    },
+    {
+      "name": "mobile-journal-fits",
+      "passed": true
+    },
+    {
+      "name": "reduced-motion-has-no-walking-wait",
+      "passed": true
+    },
+    {
+      "name": "mobile-noodle-camera-at-actual-stop",
+      "passed": true
+    },
+    {
+      "name": "mobile-reading-actions-visible",
+      "passed": true
+    },
+    {
+      "name": "mobile-sources-accessible",
+      "passed": true
+    },
+    {
+      "name": "mobile-era-control-and-turn-work",
+      "passed": true
+    },
+    {
+      "name": "small-mobile-no-horizontal-overflow",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

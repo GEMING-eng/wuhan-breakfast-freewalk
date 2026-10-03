@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-02",
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "name": "interior-present",
+      "reference": "interior.png",
+      "transparent": false,
+      "prompt": "Use case: precise-object-edit. Edit target is the attached frontal painted kitchen wall. Create TODAY's repaired version of exactly this same wall for a two-sided miniature paper theatre. Same image dimensions 1536x1024, exact frontal orthographic registration, same window on the left and shelves on the right, same beam boundaries. Keep the old red-brown wooden window with same lattice silhouette in its exact place. Repaired pale warm chalk plaster upper middle, pale muted jade glazed rectangular subway tiles across lower 55 percent of wall, visible grout, a few imperfect repairs; no destroyed black exposed brick. Right shelves are now cleaned rich dark wood with three old blue-white bowls kept beside simple clean white bowls, brushed steel tea tins instead of thermos flasks; one small green trailing plant above shelf. Hanging clean striped tea towel, two steel utensils, bamboo scoop kept. Same small hanging bulb in exact same place. Hand-painted gouache on cotton paper, refined woodcut details, restrained warm muted palette matching reference. Visibly different renewed wall, still a working Wuhan family breakfast shop, not a luxury modern cafe. Even diffuse light, no huge baked shadow. No people, text, signage, counter, food bowls in foreground, perspective rotation or camera movement. Full-bleed rectangular architectural texture, no border."
+    },
+    {
+      "name": "keeper-speak",
+      "reference": "keeper.png",
+      "transparent": true,
+      "prompt": "Use case: identity-preserve. Edit target: attached paper-collage character. Production animation frame, exactly identical registration as original, portrait 1024x1536. Preserve character identity, face shape, pose, head angle, hairstyle, entire body silhouette, clothing, paper-cut edges, hands and chopsticks, lighting, pigment texture, scale, crop and position EXACTLY. True transparent background, no halo, no backdrop, no new objects, no text. Change ONLY eyes and mouth as specified. This image will replace the original texture on the SAME 3D silhouette at 8 frames per second, so no displacement or redrawing of body. Expression: friendly speaking syllable AH, mouth visibly moderately open with natural dark inner mouth and subtle teeth, eyes remain open looking in exactly same direction. Warm middle-aged shopkeeper telling a story. Do NOT enlarge the smile, do NOT move the jaw/head/body. Keep all features at their original coordinates."
+    },
+    {
+      "name": "keeper-blink",
+      "reference": "keeper.png",
+      "transparent": true,
+      "prompt": "Use case: identity-preserve. Edit target: attached paper-collage character. Production animation frame, exactly identical registration as original, portrait 1024x1536. Preserve character identity, face shape, pose, head angle, hairstyle, entire body silhouette, clothing, paper-cut edges, hands and chopsticks, lighting, pigment texture, scale, crop and position EXACTLY. True transparent background, no halo, no backdrop, no new objects, no text. Change ONLY eyes and mouth as specified. This image will replace the original texture on the SAME 3D silhouette at 8 frames per second, so no displacement or redrawing of body. Expression: natural brief blink, both eyelids gently closed; lips gently together as a closed speaking syllable, soft warm smile. Keep head and face dimensions exactly unchanged; do NOT bow head or shift body. All original coordinates must stay unchanged."
+    },
+    {
+      "name": "successor-speak",
+      "reference": "successor.png",
+      "transparent": true,
+      "prompt": "Use case: identity-preserve. Edit target: attached paper-collage character. Production animation frame, exactly identical registration as original, portrait 1024x1536. Preserve character identity, face shape, pose, head angle, hairstyle, entire body silhouette, clothing, paper-cut edges, hands and chopsticks, lighting, pigment texture, scale, crop and position EXACTLY. True transparent background, no halo, no backdrop, no new objects, no text. Change ONLY eyes and mouth as specified. This image will replace the original texture on the SAME 3D silhouette at 8 frames per second, so no displacement or redrawing of body. Expression: young woman speaking a friendly AH syllable, mouth visibly moderately open with natural dark inner mouth and subtle teeth, eyes remain open looking exactly as before. Do NOT change hairstyle, face position or any other part of the image."
+    },
+    {
+      "name": "successor-blink",
+      "reference": "successor.png",
+      "transparent": true,
+      "prompt": "Use case: identity-preserve. Edit target: attached paper-collage character. Production animation frame, exactly identical registration as original, portrait 1024x1536. Preserve character identity, face shape, pose, head angle, hairstyle, entire body silhouette, clothing, paper-cut edges, hands and chopsticks, lighting, pigment texture, scale, crop and position EXACTLY. True transparent background, no halo, no backdrop, no new objects, no text. Change ONLY eyes and mouth as specified. This image will replace the original texture on the SAME 3D silhouette at 8 frames per second, so no displacement or redrawing of body. Expression: natural brief blink, eyes gently closed; lips gently together, relaxed smile. Preserve the exact same young adult, facial registration and head pose. No changes to body or silhouette."
+    },
+    {
+      "name": "timber-grain",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: high-resolution seamless material albedo texture for the exposed modeled timber of a miniature Wuhan old breakfast shop. Square 1536x1536, flat orthographic straight-on surface with ZERO perspective, no actual model. One continuous piece of aged honey chestnut brown timber, fine lengthwise vertical irregular grain, narrow checks, finger-polished worn pale ridges, a few darker water marks, minute scratches and nail stains but NO actual nails or objects. Rich painterly gouache/woodcut realism on paper, physical grain readable close up. Muted medium warm brown with neutral shadows, even diffuse lighting, no directional shadow, no vignette, no white border, no text, no plank seams. Seamless top/bottom and left/right suitable for repeating 3D basecolor and shallow bump. This is MATERIAL texture, not a picture of furniture."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "viewport": {
+    "width": 1170,
+    "height": 1003,
+    "dpr": 1.25
+  },
+  "state": {
+    "saveVersion": 1,
+    "started": true,
+    "screen": "past-street",
+    "shopId": null,
+    "dialogueNodeId": "street_01",
+    "stableCheckpoint": {
+      "screen": "past-street",
+      "shopId": null,
+      "dialogueNodeId": "street_01"
+    },
+    "observed": {
+      "sauceJar": false,
+      "spatula": false,
+      "stool": false
+    },
+    "topicsRead": {},
+    "completed": {
+      "noodle": false,
+      "doupi": false,
+      "mianwo": false
+    },
+    "visited": {},
+    "shopNodes": {},
+    "endingSeen": null,
+    "invitationSeen": false,
+    "settings": {
+      "muted": false,
+      "volume": 0.1,
+      "reducedMotion": false,
+      "instantText": true,
+      "lowPerformance": false
+    }
+  },
+  "text": "热干面铺\n走近聊聊 ↗\n豆皮铺\n走近聊聊 ↗\n面窝摊\n走近聊聊 ↗\n纸景中的清晨\n画面暂时歇了一会儿\n\n故事进度已保留，可以重试恢复。\n\n重试纸景\n返回\n←\n暂停\n我的过早\n0 / 3\n♪\n☷\n街口的招呼\n创作对白\n照片之外的我\n\n照片里的清晨，忽然有了声音。\n照片里的清晨，忽然有了声音。\n\n继续\n→\n再看看这张照片 ↗\n回到今天 →\n虚构街巷 · 情境演绎\n资料与创作说明 ↗",
+  "renderer": "street-landscape"
+}

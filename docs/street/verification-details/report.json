@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-03",
+  "checks": [
+    {
+      "name": "all-three-corners-reachable",
+      "passed": true
+    },
+    {
+      "name": "closeup-tea",
+      "passed": true
+    },
+    {
+      "name": "closeup-market",
+      "passed": true
+    },
+    {
+      "name": "closeup-notice",
+      "passed": true
+    },
+    {
+      "name": "three-different-camera-destinations",
+      "passed": true
+    },
+    {
+      "name": "corner-turns-while-ambient-paused",
+      "passed": true
+    },
+    {
+      "name": "era-change-keeps-selected-corner",
+      "passed": true
+    },
+    {
+      "name": "corner-copy-follows-present-era",
+      "passed": true
+    },
+    {
+      "name": "rapid-reversal-settles-corner-and-shop",
+      "passed": true
+    },
+    {
+      "name": "close-restores-street",
+      "passed": true
+    },
+    {
+      "name": "five-shop-reservations-preserved",
+      "passed": true,
+      "calls": "2418",
+      "triangles": "1688023"
+    },
+    {
+      "name": "mobile-panels-fit-without-overlap",
+      "passed": true,
+      "card": {
+        "top": 411.3125,
+        "bottom": 686,
+        "left": 14,
+        "right": 376
+      },
+      "menu": {
+        "top": 695,
+        "bottom": 737,
+        "left": 14,
+        "right": 376
+      },
+      "nav": {
+        "top": 749,
+        "bottom": 806,
+        "left": 14,
+        "right": 376
+      },
+      "overflow": false
+    },
+    {
+      "name": "shop-still-reachable-after-corner",
+      "passed": true
+    },
+    {
+      "name": "direct-present-initializes-corner",
+      "passed": true
+    }
+  ],
+  "errors": []
+}
