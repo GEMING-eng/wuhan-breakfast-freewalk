@@ -136,24 +136,24 @@ export class PaperWorkshop {
     mat.customProgramCacheKey=()=>young?'portrait-young-v3':'portrait-older-v3';
     return (a:number,b:number,mix:number,blinkAmount:number)=>{from.value=textures[a];to.value=textures[b];blend.value=mix;blink.value=blinkAmount;};
   }
-  portraitAtlas(mesh:T.Mesh,younger=false){
+  portraitAtlas(mesh:T.Mesh,younger=false,profile?:{key:string;offsets:number[][];size:number;mouth:number[];eyes:number[];mouthRadius:number[];eyesRadius:number[]}){
     const mat=(mesh.material as T.MeshStandardMaterial[])[0],a={value:0},b={value:0},blend={value:0},blink={value:0};
     mat.emissiveMap=null;mat.emissive.set('#534738');mat.emissiveIntensity=.12;
     mat.onBeforeCompile=shader=>{
-      const offsets=(younger?[[0,0],[363,0],[725,0],[0,627],[362,627],[725,627]]:[[0,0],[382,0],[765,0],[0,622],[382,623],[765,622]]).map(([x,y])=>new T.Vector2(x/1254,-y/1254));
-      Object.assign(shader.uniforms,{mouthA:a,mouthB:b,mouthBlend:blend,blinkAmount:blink,frameOffsets:{value:offsets},mouthCenter:{value:new T.Vector2(younger?.718:.677,younger?.848:.812)},eyesCenter:{value:new T.Vector2(younger?.70:.68,younger?.881:.849)}});
+      const offsets=(profile?.offsets??(younger?[[0,0],[363,0],[725,0],[0,627],[362,627],[725,627]]:[[0,0],[382,0],[765,0],[0,622],[382,623],[765,622]])).map(([x,y])=>new T.Vector2(x/(profile?.size??1254),-y/(profile?.size??1254)));
+      Object.assign(shader.uniforms,{mouthA:a,mouthB:b,mouthBlend:blend,blinkAmount:blink,frameOffsets:{value:offsets},mouthCenter:{value:new T.Vector2(...(profile?.mouth??[younger?.718:.677,younger?.848:.812]) as [number,number])},eyesCenter:{value:new T.Vector2(...(profile?.eyes??[younger?.70:.68,younger?.881:.849]) as [number,number])}});
       shader.fragmentShader=`uniform float mouthA;uniform float mouthB;uniform float mouthBlend;uniform float blinkAmount;
         uniform vec2 frameOffsets[6];uniform vec2 mouthCenter;uniform vec2 eyesCenter;
         vec2 cellUV(vec2 uv,float id){return uv*vec2(1./3.,.5)+vec2(0.,.5)+frameOffsets[int(id)];}
         `+shader.fragmentShader;
       shader.fragmentShader=shader.fragmentShader.replace('#include <map_fragment>',`#include <map_fragment>
         vec2 localUV=(vMapUv-vec2(0.,.5))*vec2(3.,2.);
-        float mouthMask=1.-smoothstep(.7,1.,length((localUV-mouthCenter)/vec2(.048,.025)));
+        float mouthMask=1.-smoothstep(.7,1.,length((localUV-mouthCenter)/vec2(${profile?.mouthRadius.join(',')??'.048,.025'})));
         vec3 lips=mix(texture2D(map,cellUV(localUV,mouthA)).rgb,texture2D(map,cellUV(localUV,mouthB)).rgb,mouthBlend);
         diffuseColor.rgb=mix(diffuseColor.rgb,lips,mouthMask);
-        float eyesMask=(1.-smoothstep(.7,1.,length((localUV-eyesCenter)/vec2(.077,.024))))*blinkAmount;
+        float eyesMask=(1.-smoothstep(.7,1.,length((localUV-eyesCenter)/vec2(${profile?.eyesRadius.join(',')??'.077,.024'}))))*blinkAmount;
         diffuseColor.rgb=mix(diffuseColor.rgb,texture2D(map,cellUV(localUV,5.)).rgb,eyesMask);`);
-    };mat.customProgramCacheKey=()=> 'storybook-portrait-atlas-v2';
+    };mat.customProgramCacheKey=()=> 'storybook-portrait-atlas-v2'+(profile?.key??'');
     return (from:number,to:number,mix:number,eyes:number)=>{a.value=from;b.value=to;blend.value=mix;blink.value=eyes;};
   }
   batchStatic(parent:T.Object3D){

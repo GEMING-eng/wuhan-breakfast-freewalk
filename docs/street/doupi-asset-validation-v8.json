@@ -1,0 +1,26 @@
+[
+  {
+    "name": "doupi-keeper-v8",
+    "width": 1254,
+    "height": 1254,
+    "transparentRatio": 0.6283497274431548,
+    "solidRatio": 0.3428066868635995
+  },
+  {
+    "name": "doupi-keeper-present-v8",
+    "width": 1254,
+    "height": 1254,
+    "transparentRatio": 0.6211364463064287,
+    "solidRatio": 0.3486279312897293
+  },
+  {
+    "name": "doupi-wall-past-v8",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "name": "doupi-wall-present-v8",
+    "width": 1536,
+    "height": 1024
+  }
+]

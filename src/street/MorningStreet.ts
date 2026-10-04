@@ -15,10 +15,15 @@ import {gsap} from 'gsap';
 import type {TourStop} from './tourContent';
 import {places,type PlaceId} from './exploreContent';
 import {FoodStalls} from './FoodStalls';
+import {DoupiShop} from './DoupiShop';
+import type {ShopModule} from './ShopModule';
 import {addStreetPatina} from './StreetPatina';
+import {FreeWalk} from './FreeWalk';
+import {AgedPaving} from './AgedPaving';
+import {StreetEras} from './StreetEras';
 
 const V=(x:number,y:number,z:number)=>new T.Vector3(x,y,z);
-type Pedestrian={group:T.Group;print:T.Mesh;start:T.Vector3;end:T.Vector3;phase:number;speed:number;moving:boolean;};
+type Pedestrian={group:T.Group;print:T.Mesh;prints:T.Mesh[];start:T.Vector3;end:T.Vector3;phase:number;speed:number;moving:boolean;};
 
 export class MorningStreet implements SceneExtension{
   readonly illustrated=true;
@@ -36,10 +41,20 @@ export class MorningStreet implements SceneExtension{
   private dawnTween:gsap.core.Tween|null=null;
   private walkMap=false;private explorerMarkers=new Map<PlaceId,HTMLButtonElement>();
   private foodStalls:FoodStalls|null=null;
-  constructor(private host:HTMLDivElement,onTravel?:(moving:boolean)=>void){if(onTravel)this.walk=new FirstPersonWalk(onTravel);}
-  walkTo(index:number,animate:boolean,custom?:TourStop){this.walk?.go(index,animate,custom);}
-  setWalkMap(value:boolean){this.walkMap=value;this.host.dataset.walkMode=value?'map':'first-person';}
+  private shops=new Map<string,ShopModule>();
+  private free:FreeWalk|null=null;private paving:AgedPaving|null=null;private eras:StreetEras|null=null;private markerEnabled=false;
+  get ownsPointer(){return !!this.free;}
+  enableFreeRoam(onManual:()=>void){this.free=new FreeWalk(this.host,v=>this.onTravel?.(v),onManual);this.host.dataset.walkMode='first-person';}
+  enableControls(enabled:boolean,blocked=false){this.markerEnabled=enabled&&!blocked;this.free?.setEnabled(enabled,blocked);}
+  joystick(x:number,y:number){this.free?.joystick(x,y);}
+  zoom(delta:number){this.free?.zoom(delta);}
+  cancelWalk(){this.free?.cancel();}
+  beforeFrame(dt:number){this.free?.update(dt);}
+  constructor(private host:HTMLDivElement,private onTravel?:(moving:boolean)=>void){if(onTravel)this.walk=new FirstPersonWalk(onTravel);}
+  walkTo(index:number,animate:boolean,custom?:TourStop){if(this.free&&custom)this.free.go(custom);else this.walk?.go(index,animate,custom);}
+  setWalkMap(value:boolean){this.walkMap=value;this.host.dataset.walkMode=this.free?'first-person':value?'map':'first-person';}
   setExplorerMarkers(markers:Map<PlaceId,HTMLButtonElement>){this.explorerMarkers=markers;}
+  speakAtShop(id:PlaceId){this.shops.get(id)?.speak();}
   finishWalk(){this.walk?.finish();this.dawnTween?.progress(1);}
   configure(scene:T.Scene,renderer:T.WebGLRenderer,camera:T.PerspectiveCamera,shop:T.Group){
     this.scene=scene;this.shop=shop;
@@ -59,7 +74,14 @@ export class MorningStreet implements SceneExtension{
     const images=await Promise.all(names.map(n=>w.image(import.meta.env.BASE_URL+'assets/storybook/'+n+'.webp')));if(this.disposed)return;
     const [sky,ochre,indigo]=images,portraits=images.slice(3,7),[tree,row,vine]=images.slice(7);
     this.ground(w);this.architecture(w,ochre,indigo);this.streetLife(w,portraits);this.atmosphere(w,sky);
-    if(this.explorerMarkers.size){const counterArt=await Promise.all(['doupi-interior-v7','mianwo-interior-v7'].map(n=>w.image(import.meta.env.BASE_URL+'assets/storybook/'+n+'.png')));if(this.disposed)return;this.foodStalls=new FoodStalls(w,this.sockets,counterArt);}
+    if(this.explorerMarkers.size){
+      const base=import.meta.env.BASE_URL+'assets/storybook/';
+      const [past,present,keeper,keeperToday,mianwo,mianwoToday]=await Promise.all(['doupi-wall-past-v8.webp','doupi-wall-present-v8.webp','doupi-keeper-v8.webp','doupi-keeper-present-v8.webp','mianwo-interior-v7.png','mianwo-present-v9.png'].map(n=>w.image(base+n)));
+      if(this.disposed)return;
+      const doupi=new DoupiShop(w,{past,present,keeper,keeperToday},this.host);
+      doupi.mount(this.sockets.get('doupi')!);this.shops.set(doupi.id,doupi);
+      this.foodStalls=new FoodStalls(w,this.sockets,[mianwo,mianwoToday],this.host);
+    }
     addStreetPatina(w,this.scenery,this.sockets);
     this.sockets.forEach((socket,id)=>upperRoomDetails(w,socket,shopPlots.findIndex(p=>p.id===id),vine));
     const neighborhood=buildNeighborhood(w,this.scenery,tree,row);this.trees=neighborhood.sway;this.birds=neighborhood.birds;
@@ -72,6 +94,8 @@ export class MorningStreet implements SceneExtension{
     for(const x of [-1.15,1.15])w.box(menu,[.09,3.64,.12],[x,1.83,-.08],'#997959','wood');
     // A cutaway wall must keep its identity, but its window lattice and flowerpots can
     // share draws inside that wall. Do this before the whole street's static batch.
+    this.eras=new StreetEras(w,this.scenery,this.sockets);
+    this.paving=new AgedPaving(w,this.scenery);
     this.cutawayWalls.forEach(({group})=>{w.batchStatic(group);w.batchScenery(group);});
     this.people.forEach(p=>p.group.userData.animationRoot=true);
     [...this.branches,...this.laundry].forEach(g=>g.userData.animationRoot=true);
@@ -79,7 +103,7 @@ export class MorningStreet implements SceneExtension{
     this.host.dataset.reservedPlots=String(shopPlots.filter(p=>p.status==='reserved').length-(this.foodStalls?2:0));
     this.host.dataset.streetPeople=String(this.people.length);this.host.dataset.streetView=this.viewId;
     this.host.dataset.streetAssets=String(images.length);
-    this.host.dataset.foodCounters=this.foodStalls?'3':'1';this.host.dataset.pavingWear='380';
+    this.host.dataset.foodCounters=this.foodStalls?'3':'1';this.host.dataset.pavingWear='380';this.host.dataset.eraBuildings='6';this.host.dataset.pedestrianHeight='3.15';this.host.dataset.pavingDetail='stone-grain-cracks-moss-repairs';
   }
   private ground(w:PaperWorkshop){
     const g=this.scenery;
@@ -195,9 +219,9 @@ export class MorningStreet implements SceneExtension{
     w.box(this.scenery,[.12,3.9,.13],[-5.35,1.93,17.16],'#746046','wood');w.box(this.scenery,[.12,3.9,.13],[-3.05,1.93,17.16],'#746046','wood');
   }
   private streetLife(w:PaperWorkshop,portraits:HTMLImageElement[]){
-    const g=this.scenery;marketCart(w,g,-6.3,13);umbrella(w,g,-6.3,12.5,'#a96848');bicycle(w,g,6.1,11,-Math.PI/2+.18);
+    const g=this.scenery;marketCart(w,g,-6.3,13);umbrella(w,g,-6.3,12.5,'#a96848');
     bench(w,g,-6.0,-27.5,.25);bench(w,g,3.2,-29,-.3);
-    bicycle(w,g,-6.3,-11,Math.PI/2);umbrella(w,g,6.2,-25.2,'#6e8272');
+    umbrella(w,g,6.2,-25.2,'#6e8272');
     for(const [x,z] of [[-5.8,10.1],[6.1,8],[-5.7,-1],[5.8,-4.4],[-5.8,-22],[5.9,-27.3]]){
       const plant=new T.Group();plant.position.set(x,.15,z);g.add(plant);
       w.mesh(plant,new T.LatheGeometry([[.20,0],[.30,.43],[.32,.46],[.29,.46]].map(([a,b])=>new T.Vector2(a,b)),20),w.material('#916e4e','ceramic'));
@@ -224,9 +248,15 @@ export class MorningStreet implements SceneExtension{
       {image:1,a:[1.1,0,-28],b:[1.1,0,-28],phase:.8,speed:0,moving:false},
     ];
     for(const route of routes){
-      const person=new T.Group();g.add(person);const height=(route.image===0?2.05:1.98)*(1+(this.people.length%4-1.5)*.026);
-      const paper=w.print(person,portraits[route.image],height*2/3,height,[0,0,0],true);paper.geometry.computeBoundingBox();paper.position.y=.06-paper.geometry.boundingBox!.min.y;
-      this.people.push({group:person,print:paper,start:new T.Vector3(...route.a),end:new T.Vector3(...route.b),phase:route.phase,speed:route.speed,moving:route.moving});
+      const person=new T.Group();person.name='pedestrian-'+this.people.length;person.userData.animationRoot=true;g.add(person);
+      const height=3.15*(1+(this.people.length%4-1.5)*.027),prints:T.Mesh[]=[];
+      for(let era=0;era<2;era++){
+        const image=portraits[(this.people.length%2)+(era?2:0)];
+        const paper=w.print(person,image,height*2/3,height,[0,0,0],true);paper.geometry.computeBoundingBox();
+        const box=paper.geometry.boundingBox!,scale=height/(box.max.y-box.min.y);paper.scale.setScalar(scale);paper.position.y=.06-box.min.y*scale;
+        paper.name='pedestrian-'+(era?'present':'past');prints.push(paper);
+      }
+      this.people.push({group:person,print:prints[0],prints,start:new T.Vector3(...route.a),end:new T.Vector3(...route.b),phase:route.phase,speed:route.speed,moving:route.moving});
     }
   }
   private atmosphere(w:PaperWorkshop,image:HTMLImageElement){
@@ -258,6 +288,7 @@ export class MorningStreet implements SceneExtension{
   private applyDawn(){if(!this.sun)return;const y=14+this.dawn*13;this.sun.position.set(12,y,-58);this.sun.intensity=2.75+this.dawn*.9;this.sun.color.copy(new T.Color('#ffc17e').lerp(new T.Color('#ffe9c2'),this.dawn));this.sunDisc?.position.set(12,y,-58);this.sunGlow?.position.set(12,y,-57.8);this.scene.fog!.color.copy(new T.Color('#d5dfce').lerp(new T.Color('#e5e8ce'),this.dawn));this.host.dataset.dawn=this.dawn.toFixed(2);this.host.dataset.sunHeight=y.toFixed(2);}
   view(detail:Detail,aspect:number,orbit:number){
     this.activeDetail=detail;
+    if(this.free)return this.free.view(aspect);
     if(this.walk&&this.walkMap){const target=V(aspect<1?0:-3,1,-6),position=V(25,40,40);if(aspect<1)position.sub(target).multiplyScalar(1.70).add(target);return {target,position,fov:43};}
     if(this.walk)return this.walk.view(orbit,aspect);
     if(this.moment){
@@ -276,13 +307,29 @@ export class MorningStreet implements SceneExtension{
     position.sub(target).applyAxisAngle(V(0,1,0),orbit).add(target);
     return {position,target};
   }
-  update(time:number,camera:T.PerspectiveCamera,turn:number){
-    this.foodStalls?.update(time,camera);
+  update(time:number,camera:T.PerspectiveCamera,turn:number,motion=true){
+    this.foodStalls?.update(time,camera,turn);this.eras?.update(turn);this.paving?.update(turn);
+    this.host.dataset.wholeStreetEra=turn>=.5?'present':'past';this.host.dataset.pedestrianEra=turn>=.5?'present':'past';
+    this.shops.forEach(shop=>{shop.setEraProgress(turn);shop.update(time,camera,motion);});
     const bounds=this.host.getBoundingClientRect();
-    this.explorerMarkers.forEach((button,id)=>{const place=places.find(p=>p.id===id)!;const point=new T.Vector3(...place.anchor).project(camera);button.hidden=!this.walkMap||point.z<0||point.z>1||Math.abs(point.x)>.97||Math.abs(point.y)>.92;button.style.transform=`translate(${(point.x*.5+.5)*bounds.width}px,${(-point.y*.5+.5)*bounds.height}px) translate(-50%,-50%)`;});
+    const occupied:{x:number;y:number}[]=[];
+    this.explorerMarkers.forEach((button,id)=>{
+      const place=places.find(p=>p.id===id)!;
+      const anchor=new T.Vector3(...place.anchor);anchor.y=this.free?3.55:anchor.y;
+      const distance=anchor.distanceTo(camera.position),point=anchor.project(camera);
+      const active=this.free?this.markerEnabled:this.walkMap;
+      button.hidden=!active||distance>35||point.z<0||point.z>1||Math.abs(point.x)>.92||Math.abs(point.y)>.76;
+      let x=(point.x*.5+.5)*bounds.width,y=(-point.y*.5+.5)*bounds.height;
+      if(!button.hidden){
+        for(const other of occupied)if(Math.abs(x-other.x)<112&&Math.abs(y-other.y)<48)y=other.y+51;
+        if(y>bounds.height-135)button.hidden=true;else occupied.push({x,y});
+      }
+      button.style.transform='translate('+x+'px,'+y+'px) translate(-50%,-50%)';
+      button.dataset.distance=distance.toFixed(1);
+    });
     this.life?.update(time,camera,turn);this.host.dataset.streetTurn=turn.toFixed(3);
     this.rays?.update(time,this.dawn);
-    if(this.walk){const state=this.walk.state;this.host.dataset.walkStop=state.stop;this.host.dataset.walking=String(state.moving);this.host.dataset.eyeHeight=state.eye.toFixed(3);}
+    if(this.free||this.walk){const state=this.free?.state??this.walk!.state;this.host.dataset.walkStop=state.stop;this.host.dataset.walking=String(state.moving);this.host.dataset.eyeHeight=state.eye.toFixed(3);if(this.free){this.host.dataset.walkMode='first-person';this.host.dataset.walkYaw=this.free.state.yaw.toFixed(3);this.host.dataset.walkPitch=this.free.state.pitch.toFixed(3);this.host.dataset.walkFov=this.free.state.fov.toFixed(1);}}
     this.sunDisc?.quaternion.copy(camera.quaternion);this.sunGlow?.quaternion.copy(camera.quaternion);
     this.cutawayWalls.forEach(({group,socket,side})=>{group.visible=socket.worldToLocal(camera.position.clone()).x*side<0;});
     this.trees.forEach((g,i)=>g.rotation.z=Math.sin(time*.32+i)*.0035);
@@ -293,13 +340,13 @@ export class MorningStreet implements SceneExtension{
       // Continuous ping-pong routes never teleport through a visible frame or enter a shop plot.
       const progress=phase<=1?phase:2-phase;p.group.position.lerpVectors(p.start,p.end,progress);p.group.position.y=p.moving?Math.abs(Math.sin(time*2.25+i))*.018:0;
       p.group.rotation.y=Math.atan2(camera.position.x-p.group.position.x,camera.position.z-p.group.position.z)*.78;
-      p.print.rotation.z=Math.sin(time*(p.moving?2.25:.55)+i)*(p.moving?.012:.004);
+      p.prints.forEach((print,era)=>{print.visible=turn<.5?era===0:era===1;print.rotation.z=Math.sin(time*(p.moving?2.25:.55)+i)*(p.moving?.012:.004);print.rotation.y=turn<.5?turn*Math.PI:(turn-1)*Math.PI;});
     });
     if(this.dust)(this.dust.material as T.ShaderMaterial).uniforms.time.value=time;
     if(this.marker){const point=V(-5.6,3.0,5.6).project(camera);const b=this.host.getBoundingClientRect();this.marker.style.transform=`translate(${(point.x*.5+.5)*b.width}px,${(-point.y*.5+.5)*b.height}px) translate(-50%,-50%)`;this.marker.hidden=!!this.moment||this.shopOverview||this.activeDetail!=='welcome'||this.viewId==='plan'||point.z<0||point.z>1||Math.abs(point.x)>.94||Math.abs(point.y)>.82;}
     this.host.dataset.pedestrianZ=this.people[0]?.group.position.z.toFixed(3)??'';this.host.dataset.streetTime=time.toFixed(2);
   }
-  dispose(){this.disposed=true;this.walk?.dispose();this.dawnTween?.kill();this.scene.remove(this.scenery,this.planning);this.marker=null;}
+  dispose(){this.disposed=true;this.free?.dispose();this.walk?.dispose();this.dawnTween?.kill();this.shops.forEach(shop=>shop.dispose());this.shops.clear();this.scene.remove(this.scenery,this.planning);this.marker=null;}
 }
 
 

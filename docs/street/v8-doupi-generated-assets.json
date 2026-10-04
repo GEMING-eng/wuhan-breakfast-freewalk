@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-03",
+  "artwork": "Original fictional shop and shopkeeper, not historical documentation.",
+  "exports": "tools/prepare-doupi.cjs; lossless alpha WebP for portraits, quality 90 WebP for walls",
+  "assets": [
+    {
+      "name": "doupi-keeper-v8",
+      "source": "docs/street/storybook-source/doupi-keeper-v8.png",
+      "runtime": "public/assets/storybook/doupi-keeper-v8.webp",
+      "prompt": "Use case: illustration-story. Asset type: transparent animation sprite sheet for a Wuhan doupi breakfast shopkeeper in a three dimensional picture-book.\nInput 1 is a STYLE reference for thin warm grey ink outlines and muted pastel watercolor. Input 2 is a sprite layout example only; create a DIFFERENT character.\nCreate one transparent square 1536x1536 sheet with an exact 3 columns by 2 rows equal grid, six full-body duplicates of ONE friendly middle-aged Chinese woman, softly round face, short dark hair tied low with a muted brown hair scarf, cream rolled sleeve blouse, ochre apron with a small side pocket, indigo trousers, cloth shoes. Holds a flat long-handled iron spatula diagonally down at her waist, suitable for cutting golden square Wuhan doupi (not noodles). Facing camera almost frontally with only a slight turn to the left. Entire person and shoes within each cell with wide transparent margins, identical position and silhouette in every cell. Match the reference's delicate storybook illustration, clear fine outlines, sage/peach/ochre/grey palette, simple readable eyes and mouth, flat soft morning light from upper right.\nSix expressions in reading order: 1 relaxed neutral closed smile and eyes open; 2 clearly open A mouth; 3 wide EE mouth showing small teeth; 4 small round O mouth; 5 gently closed M lips; 6 exact neutral expression with BOTH eyelids shut for blinking.\nOnly mouth or eyelids changes, never body, hair, nose, face contour, hands, tools or clothing. All six faces have precisely same pixel location relative to cell, same body size. Genuine transparent alpha background throughout, no grid lines, checkerboard, floor, shadows, labels, letters, steam, food, frame or environment. Not photorealistic, not glossy rendering.",
+      "tool": "built-in image_gen",
+      "transparent": true
+    },
+    {
+      "name": "doupi-keeper-present-v8",
+      "source": "docs/street/storybook-source/doupi-keeper-present-v8.png",
+      "runtime": "public/assets/storybook/doupi-keeper-present-v8.webp",
+      "prompt": "Use case: precise-object-edit. Asset type: transparent 3 columns by 2 rows shopkeeper expression sprite sheet for the TODAY era of the same fictional Wuhan doupi shop.\nEdit the supplied sprite sheet. Change ONLY the woman's OCHRE APRON into a soft muted SAGE GREEN apron, her brown head scarf into powder blue, and cream blouse into a very pale ivory blouse with delicate blue vertical stripes. Keep all six people in their exact current pixel positions, same size, same facial identity, hair, face outline, skin, eyes, mouths, nose, hands, pose, iron spatula, trousers, shoes, clothing silhouette and transparent margins. Preserve all six mouth expressions and the last closed-eye blink. No movement of any facial feature or character. Retain fine warm grey ink lines and soft flat pastel watercolor style. Genuine transparent alpha, no extra graphics, checkerboard, text or background.",
+      "tool": "built-in image_gen",
+      "transparent": true
+    },
+    {
+      "name": "doupi-wall-past-v8",
+      "source": "docs/street/storybook-source/doupi-wall-past-v8.png",
+      "runtime": "public/assets/storybook/doupi-wall-past-v8.webp",
+      "prompt": "Use case: illustration-story. Asset type: orthographic back wall texture for a dimensional Wuhan doupi breakfast stall. Reference image is STYLE ONLY: thin warm grey ink, soft pastel watercolor, restrained flat shadows, delicate storybook interior details.\nMake a full bleed landscape 3:2 straight-on BACK WALL ONLY for a fictional 1980s-inspired Wuhan doupi shop. Pale warm grey patched plaster, exposed red brick repair patches low down. Left third a small jade-blue wooden lattice window, lower part with a cream cloth curtain and soft morning light from upper right. Middle a plain cream wall with a faded paper calendar WITHOUT any readable marks, tiny round ochre clock high up. Right third an inset open blue-grey doorway into a dim utility room, warm wood frame. Wall fills the rectangle, no visible ground or ceiling. Preserve much blank wall, because separate 3D shelves and kitchen utensils will be added in front.\nAbsolutely NO people, character faces, foreground counter, food, cookware, shelves, large shadows, roof, street, lettering or logos. Detailed fine pen lines, flat light sage/powder blue/clay/cream colors, visible paper texture. No photorealism, glossy rendering or heavy yellow wash.",
+      "tool": "built-in image_gen",
+      "transparent": false
+    },
+    {
+      "name": "doupi-wall-present-v8",
+      "source": "docs/street/storybook-source/doupi-wall-present-v8.png",
+      "runtime": "public/assets/storybook/doupi-wall-present-v8.webp",
+      "prompt": "Use case: precise-object-edit. Asset type: today's orthographic back wall for the same fictional Wuhan doupi shop.\nEdit the supplied wall illustration. Preserve the exact wall rectangle, camera, framing, window size/location and old wood lattice, doorway location/shape, pipe and sink location, clock position, and morning light from upper right.\nChange the peeling cream plaster into a gently repaired pale sage plaster above a lower waist-height band of small light jade square tiles with thin grey grout. Reduce most large flaking patches but leave a few old brick traces at the foot and the same wooden window. Replace the faded calendar with a neat small cream notice sheet in the exact same place, no readable words or numbers. The utility room is cleaned, slightly lighter blue-grey. The lower window curtain is cream with delicate sage stripes. Keep faint age and handcrafted warmth; it is the same maintained family kitchen today, not a futuristic space.\nNO people, characters, shelves, utensils, food, foreground counters, foreground objects, street, roof, extra windows, letters, logos, new electrical appliances or large bright yellow wash. Match delicate warm-grey ink and flat pastel watercolor storybook style. Opaque full bleed 3:2 landscape.",
+      "tool": "built-in image_gen",
+      "transparent": false
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const fs=require('node:fs'),path=require('node:path');
-const out=path.resolve('docs/street/verification-explore');fs.mkdirSync(out,{recursive:true});
+const out=path.resolve(process.env.VERIFY_OUT||'docs/street/verification-explore');fs.mkdirSync(out,{recursive:true});
 (async()=>{
  const browser=await chromium.launch({headless:true,executablePath:process.env.CHROMIUM_PATH,args:['--enable-webgl','--use-angle=d3d11']});
  const p=await browser.newPage({viewport:{width:1440,height:960},acceptDownloads:true});p.setDefaultTimeout(90000);

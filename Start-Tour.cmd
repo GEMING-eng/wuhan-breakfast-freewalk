@@ -11,7 +11,7 @@ if not exist dist\index.html (
   pause
   exit /b 1
 )
-echo FREE-CHOICE MARKET: http://127.0.0.1:4173/?sample=tour^&v=7
+echo FIRST-PERSON OLD STREET: http://127.0.0.1:4173/
 echo If this project is already running on 4173, open that address in your browser.
 echo Keep this window open. Press Ctrl+C to stop.
 node tools\preview.cjs

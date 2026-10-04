@@ -31,9 +31,9 @@ export class AtelierScene {
     this.renderer=new T.WebGLRenderer({antialias:true,alpha:true,powerPreference:'high-performance'});
     this.renderer.setPixelRatio(Math.min(devicePixelRatio,2));this.renderer.outputColorSpace=T.SRGBColorSpace;
     this.renderer.toneMapping=T.ACESFilmicToneMapping;this.renderer.toneMappingExposure=1.02;
-    this.renderer.shadowMap.enabled=true;this.renderer.shadowMap.type=T.PCFSoftShadowMap;this.renderer.shadowMap.autoUpdate=false;
+    this.renderer.shadowMap.enabled=true;this.renderer.shadowMap.type=T.PCFShadowMap;this.renderer.shadowMap.autoUpdate=false;
     this.renderer.setClearColor('#000000',0);host.appendChild(this.renderer.domElement);
-    this.renderer.domElement.setAttribute('aria-label','林记热干面三维纸景：可拖动视角，通过旁边的按钮观察旧物');
+    this.renderer.domElement.setAttribute('aria-label',extension?.ownsPointer?'武汉老街三维纸景，第一人称自由行走':'林记热干面三维纸景：可拖动视角，通过旁边的按钮观察旧物');
     this.scene.add(new T.HemisphereLight('#e8eef6','#695641',.24));
     const sun=new T.DirectionalLight('#ffecd0',3.25);sun.position.set(-3.8,7,6);sun.castShadow=true;
     sun.shadow.mapSize.set(3072,3072);Object.assign(sun.shadow.camera,{left:-7,right:7,top:7,bottom:-5,near:.1,far:26});sun.shadow.normalBias=.008;sun.shadow.bias=-.00008;
@@ -50,9 +50,9 @@ export class AtelierScene {
   }
   private contextLost=(e:Event)=>{e.preventDefault();this.lost=true;cancelAnimationFrame(this.frame);this.status('lost');};
   private contextRestored=()=>{if(this.disposed)return;this.lost=false;this.renderer.resetState();this.status('ready');this.last=performance.now();this.tick(this.last);};
-  private down=(e:PointerEvent)=>{if((e.target as HTMLElement).closest('button'))return;this.drag={x:e.clientX,start:this.orbit};this.host.setPointerCapture(e.pointerId);};
-  private up=(e:PointerEvent)=>{this.drag=null;if(this.host.hasPointerCapture(e.pointerId))this.host.releasePointerCapture(e.pointerId);};
-  private move=(e:PointerEvent)=>{const b=this.host.getBoundingClientRect();this.pointer.set((e.clientX-b.left)/b.width-.5,(e.clientY-b.top)/b.height-.5);if(this.drag)this.orbit=T.MathUtils.clamp(this.drag.start+(e.clientX-this.drag.x)/b.width*1.1,-.35,.35);};
+  private down=(e:PointerEvent)=>{if(this.extension?.ownsPointer||(e.target as HTMLElement).closest('button'))return;this.drag={x:e.clientX,start:this.orbit};this.host.setPointerCapture(e.pointerId);};
+  private up=(e:PointerEvent)=>{if(this.extension?.ownsPointer)return;this.drag=null;if(this.host.hasPointerCapture(e.pointerId))this.host.releasePointerCapture(e.pointerId);};
+  private move=(e:PointerEvent)=>{if(this.extension?.ownsPointer)return;const b=this.host.getBoundingClientRect();this.pointer.set((e.clientX-b.left)/b.width-.5,(e.clientY-b.top)/b.height-.5);if(this.drag)this.orbit=T.MathUtils.clamp(this.drag.start+(e.clientX-this.drag.x)/b.width*1.1,-.35,.35);};
   private leave=()=>{this.pointer.set(0,0);};
   private layer(object:T.Object3D,offset:number){this.layers.push({object,z:object.position.z,offset});return object;}
   async build(){
@@ -215,7 +215,7 @@ export class AtelierScene {
       .to(this.wallTravel,{value:1,duration:.55},.45)
       .to(this.canopies.map(c=>c.rotation),{x:-.95,duration:.65},.45)
       .to(this.panels.map(p=>p.rotation),{y:angle,duration:1.5,stagger:.18},1)
-      .call(()=>this.applyEra(),[],1.95)
+      .call(()=>this.applyEra(),[],1.75)
       .to(this.wallTravel,{value:0,duration:.65},3.1)
       .to(this.canopies.map(c=>c.rotation),{x:0,duration:.65},3.1);
   }
@@ -224,6 +224,7 @@ export class AtelierScene {
   private tick=(now:number)=>{
     if(this.disposed||this.lost||document.hidden)return;this.frame=requestAnimationFrame(this.tick);if(now-this.last<1000/30)return;
     const dt=Math.min((now-this.last)/1000,1);this.last=now;if(this.motion)this.elapsed+=dt;const t=this.elapsed;
+    this.extension?.beforeFrame?.(dt);
     const aspect=this.size.w/this.size.h;const view=views[this.focus];const distance=viewDistance(this.focus,aspect,this.camera.fov);
     this.drift.lerp(this.motion?this.pointer:new T.Vector2(),.045);
     const yaw=view.yaw+this.orbit+this.drift.x*.025;
@@ -250,7 +251,7 @@ export class AtelierScene {
       this.host.dataset.wallAngles=this.panels.map(p=>(p.rotation.y*180/Math.PI).toFixed(1)).join(',');
       this.steam?.update(t,this.camera,!this.flat);this.host.dataset.steamTime=t.toFixed(2);
       this.layers.forEach(l=>l.object.position.z=l.z+this.exploded.value*l.offset);
-      this.extension?.update(t,this.camera,this.panels[0].rotation.y/Math.PI);
+      this.extension?.update(t,this.camera,this.panels[0].rotation.y/Math.PI,this.motion);
       this.anchors.forEach((v,id)=>{const b=this.markers.get(id);if(!b)return;const p=v.clone().project(this.camera);b.style.transform=`translate(${(p.x*.5+.5)*this.size.w}px,${(-p.y*.5+.5)*this.size.h}px) translate(-50%,-50%)`;b.hidden=this.flat||this.focus!=='welcome'||p.z<0||p.z>1||Math.abs(p.x)>1||Math.abs(p.y)>1;});
     }
     this.renderer.shadowMap.needsUpdate=true;this.renderer.info.autoReset=false;this.renderer.info.reset();this.finish.render();

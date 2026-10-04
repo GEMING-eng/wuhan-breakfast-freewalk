@@ -1,6 +1,6 @@
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const sharp=require(process.env.SHARP_MODULE||'sharp'),fs=require('node:fs'),path=require('node:path');
-const out=path.resolve('docs/street/verification-final');fs.mkdirSync(out,{recursive:true});
+const out=path.resolve(process.env.VERIFY_OUT||'docs/street/verification-final');fs.mkdirSync(out,{recursive:true});
 async function diff(a,b){const [x,y]=await Promise.all([a,b].map(v=>sharp(v).ensureAlpha().raw().toBuffer()));let changed=0;for(let i=0;i<x.length;i+=4)if(Math.max(...[0,1,2].map(c=>Math.abs(x[i+c]-y[i+c])))>6)changed++;return changed;}
 (async()=>{
   const browser=await chromium.launch({headless:true,executablePath:process.env.CHROMIUM_PATH,args:['--enable-webgl','--use-angle=d3d11']});

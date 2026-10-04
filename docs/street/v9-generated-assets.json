@@ -1,0 +1,17 @@
+{
+  "version": "v9",
+  "date": "2026-10-04",
+  "assets": [
+    {
+      "name": "mianwo-present-v9",
+      "file": "public/assets/storybook/mianwo-present-v9.png",
+      "reference": "public/assets/storybook/mianwo-interior-v7.png",
+      "tool": "built-in image_gen",
+      "width": 1536,
+      "height": 1024,
+      "transparent": false,
+      "prompt": "Use case: precise-object-edit. Edit target: the attached fictional Wuhan mianwo breakfast kitchen illustration, used as the present-day face of a turning paper wall in a 3D storybook. Preserve the exact framing, room layout, shelf/cabinet/window positions, perspective, ink outlines, delicate flat watercolor style, and morning light direction. Transform it into today's maintained family breakfast kitchen with unmistakable local object changes: repaired pale sage upper plaster, clean ivory and jade square lower wall tiles with fine grout, refreshed blue-grey wooden window frame keeping original lattice, clean brushed steel worktop over the old base, modern compact induction cooker below the same iron wok, closed reusable steel rice containers replacing the foreground burlap sack, a canvas shopping tote and stacked takeaway paper food boxes on right. Replace the elderly keeper with his adult son, friendly Chinese man around 35-40, same precise pose and size and head location, muted white rolled-sleeve shirt, clean sage green apron, same iron ladle and same authentic golden Wuhan mianwo fritters with thick edges and thin centers. Retain a few old bamboo baskets and floral enamel bowls as inherited objects. Keep coherent pale storybook color, warm grey line work; no photography or glossy realism. No readable lettering, no logos, no QR code, no menus, no extra people. Entire opaque 3:2 landscape illustration, no frame. This is original fictional art, not a historical photograph."
+    }
+  ],
+  "note": "Fictional storybook art. Pavement is generated in code by AgedPaving.ts with deterministic drawing, not a historical photograph."
+}

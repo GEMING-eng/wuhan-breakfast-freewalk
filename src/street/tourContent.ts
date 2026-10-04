@@ -7,6 +7,7 @@ export const tourSources=[
  {id:'T3',title:'武汉面窝',by:'湖北省文化和旅游厅 · 志说湖北',date:'2016-06-06',url:'https://wlt.hubei.gov.cn/bmdt/ztzl/zshb/201912/t20191226_1799589.shtml',note:'米浆、黄豆浆与专用铁勺；明确指出起源传说缺乏具体文字记载。'},
  {id:'T4',title:'武汉十大名点',by:'武汉市政府公开资料 · PDF 第 1—5 页',date:'2025-06 · 文件目录',url:'https://www.wuhan.gov.cn/wwwz/ywwz_1/H_1/NWP/202506/P020250626403473866731.pdf',note:'仅采用食物材料与形态；不据单一宣传资料判定热干面的唯一发明者。'},
  {id:'T5',title:'探寻武汉老字号的活态传承',by:'武汉市商务局',date:'2025-06-17',url:'https://sw.wuhan.gov.cn/xwdt/gzdt/202506/t20250617_2596270.shtml',note:'记录武汉图书馆举办的“过早”文化与传承讲座，支持当代文化传播的介绍。'},
+ {id:'T6',title:'武汉三鲜豆皮成了“世界的味道”',by:'长江日报 · 武汉市政府转载',date:'2025-03-21',url:'https://www.wuhan.gov.cn/sy/whyw/202503/t20250321_2555376.shtml',note:'采用米浆、鸡蛋薄皮、糯米及肉、香菇、笋丁的材料与层次；不推定唯一配方、发明者或虚构豆皮铺的真实传承身份。'},
 ] as const;
 export const tourStops:TourStop[]=[
  {id:'gate',name:'走进清晨',position:[.4,2.45,20],look:[-.3,2.7,-3],dawn:.20,pages:[

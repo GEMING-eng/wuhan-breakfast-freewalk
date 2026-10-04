@@ -2,47 +2,58 @@ import * as T from 'three';
 import {PaperWorkshop} from '../atelier/PaperWorkshop';
 import {makeSteam} from '../atelier/Steam';
 const V=(x:number,y:number,z:number)=>new T.Vector3(x,y,z);
-/** Two distinct tasting counters occupy the existing sockets, without changing the street. */
+/** Two kitchens share a counter, four physical wall hinges and one clock. */
 export class FoodStalls{
- private steam:ReturnType<typeof makeSteam>[]=[];
- constructor(w:PaperWorkshop,sockets:Map<string,T.Group>,interiors:HTMLImageElement[]){
-  for(const id of ['doupi','mianwo']){
-   const socket=sockets.get(id)!;socket.getObjectByName('removable-closure-'+id)?.removeFromParent();
-   const g=new T.Group();g.name='food-stall-'+id;socket.add(g);const doupi=id==='doupi';
-   w.box(g,[9.2,5.9,.12],[0,3,-2.42],doupi?'#c5cfb6':'#ded3b4','stone');
-   w.print(g,interiors[doupi?0:1],9.2,5.9,[0,3,-2.349]);
-   for(let row=0;row<3;row++)for(let col=0;col<18;col++){w.box(g,[.46,.22,.025],[-4.3+col*.5+(row%2)*.12,.2+row*.25,-2.34],['#9ba88e','#b1b59c','#929d89'][(row+col)%3],'stone');}
-   w.box(g,[8.8,.22,3.9],[0,.03,-.4],'#bbb7a3','stone');
-   for(const x of [-4.2,4.2])w.box(g,[.16,5.6,.16],[x,2.8,1.18],'#9a7553','wood');
-   w.box(g,[8.7,.16,.21],[0,5.48,1.18],'#87674a','wood');
-   w.sign(g,doupi?'三 鲜 豆 皮':'现 炸 面 窝',5.9,.94,[0,4.76,1.21],doupi?'#bb764f':'#748d78','#f2e4bf',doupi?'糯 米 软 香　·　趁 热 尝 尝':'厚 边 薄 心　·　早 起 一 口');
-   for(let i=0;i<12;i++){const awning=w.box(g,[.69,.045,2.2],[-3.8+i*.69,4.07,1.43],i%2?'#eee0b5':doupi?'#c89961':'#96ad89','cloth');awning.rotation.x=.16;w.box(g,[.69,.27,.03],[-3.8+i*.69,3.78,2.53],i%2?'#eee0b5':doupi?'#c89961':'#96ad89','cloth');}
-   const counter=new T.Group();counter.position.set(0,0,1.0);counter.scale.y=.78;g.add(counter);
-   w.box(counter,[6.4,1.83,1.4],[0,1.06,0],doupi?'#ad805c':'#809b87','wood');w.box(counter,[6.68,.14,1.64],[0,2.04,0],'#d0b08b','wood');
-   for(let i=0;i<14;i++)w.box(counter,[.016,1.49,.012],[-3+i*.46,1.10,.708],'#685d46','wood');
-   for(const x of [-2.9,2.9])for(const y of [.45,1.8]){const nail=w.mesh(counter,new T.SphereGeometry(.025,6,4),w.material('#5a6556','metal'),[x,y,.723]);nail.scale.z=.25;}
-   w.box(g,[1.65,.09,.50],[-3.0,3.07,-2.15],'#ac805b','wood');
-   for(let j=0;j<3;j++){const jar=w.cylinder(g,.15,.27,[-3.54+j*.52,3.24,-2.08],j%2?'#d6ddd0':'#829d90',20,'ceramic');w.cylinder(g,.155,.035,[jar.position.x,3.385,-2.08],'#8b6c48',16,'wood');}
-   for(let i=0;i<4;i++){const plate=w.cylinder(counter,.38,.065,[2.31,2.14+i*.075,.04],'#d8decc',28,'ceramic');plate.receiveShadow=true;}
-   w.cylinder(counter,.23,.45,[2.70,2.30,-.29],'#a78b5e',20,'wood');for(let i=0;i<9;i++)w.box(counter,[.027,.65,.027],[2.56+(i%3)*.10,2.60,-.4+Math.floor(i/3)*.10],'#836443','wood');
-   w.sign(counter,doupi?'一口糯香':'一口酥香',1.9,.6,[1.6,1.11,.74],'#eee1bd','#71694d');
-   if(doupi){
-    w.box(counter,[3.25,.11,1.18],[-1,2.16,0],'#71786b','metal');
-    for(let row=0;row<3;row++)for(let col=0;col<5;col++){
-     const x=-2.18+col*.58,z=-.39+row*.38;w.box(counter,[.53,.12,.33],[x,2.28,z],'#e5d4a1');w.box(counter,[.54,.035,.34],[x,2.355,z],'#d4a24a');
-     for(let j=0;j<3;j++)w.box(counter,[.04,.022,.045],[x-.15+j*.13,2.38,z+Math.sin(col+j)*.10],j===0?'#79935a':'#a47240');
-    }
-    w.box(counter,[.39,.025,.44],[.36,2.29,.08],'#9aa698','metal');w.box(counter,[.07,.05,.64],[.36,2.33,-.36],'#99754d','wood');
-   }else{
-    const pan=w.mesh(counter,new T.SphereGeometry(.81,32,16,0,Math.PI*2,0,Math.PI/2),w.material('#626d61','metal'),[-1.13,2.35,-.03]);pan.rotation.x=Math.PI;pan.scale.y=.22;
-    w.cylinder(counter,.75,.012,[-1.13,2.29,-.03],'#b29450',32);
-    for(let j=0;j<5;j++){const ring=w.mesh(counter,new T.TorusGeometry(.22,.084,8,22),w.material(j%2?'#cc9650':'#dcb367'),[-1.44+(j%2)*.59,2.40, -.39+Math.floor(j/2)*.36]);ring.rotation.x=-Math.PI/2;ring.scale.y=.83;}
-    w.line(counter,[V(-.4,2.36,-.1),V(.1,2.53,-.36),V(.35,2.58,-.45)],'#798b7a',.037);
-    w.box(counter,[.1,.08,.40],[.35,2.60,-.53],'#a87850','wood');
-   }
-   const steamParent=new T.Group();steamParent.userData.animationRoot=true;counter.add(steamParent);this.steam.push(makeSteam(w,steamParent,V(-1,2.48,0)));
-   const lamp=w.mesh(g,new T.SphereGeometry(.105,12,8),w.ownMaterial(new T.MeshStandardMaterial({color:'#fff2c9',emissive:'#ffd49a',emissiveIntensity:.7})),[0,3.52,.38]);lamp.castShadow=false;w.line(g,[V(0,4.13,.38),V(0,3.6,.38)],'#65715f',.012);
+ private steam:ReturnType<typeof makeSteam>;
+ private panels:T.Group[]=[];private wall=new T.Group();private eras=[new T.Group(),new T.Group()];
+ constructor(w:PaperWorkshop,sockets:Map<string,T.Group>,interiors:HTMLImageElement[],private host?:HTMLDivElement){
+  const socket=sockets.get('mianwo')!;socket.getObjectByName('removable-closure-mianwo')?.removeFromParent();
+  const g=new T.Group();g.name='food-stall-mianwo';g.userData.animationRoot=true;socket.add(g);
+  this.wall.position.set(0,3,-2.35);this.wall.userData.animationRoot=true;g.add(this.wall,...this.eras);
+  for(let i=0;i<4;i++){
+   const hinge=new T.Group();hinge.position.x=-3.45+i*2.3;hinge.userData.animationRoot=true;this.wall.add(hinge);this.panels.push(hinge);
+   w.box(hinge,[2.295,5.9,.07],[0,0,0],'#b9ad90');
+   for(let era=0;era<2;era++){const face=w.print(hinge,interiors[era],2.3,5.9,[0,0,era?-.041:.041]);face.castShadow=false;if(era)face.rotation.y=Math.PI;const uv=face.geometry.getAttribute('uv');for(let n=0;n<uv.count;n++)uv.setX(n,(uv.getX(n)+i)/4);}
   }
+  w.box(g,[8.8,.22,3.9],[0,.03,-.4],'#bbb7a3','stone');
+  for(const x of [-4.2,4.2])w.box(g,[.16,5.6,.16],[x,2.8,1.18],'#9a7553','wood');
+  w.box(g,[8.7,.16,.21],[0,5.48,1.18],'#87674a','wood');
+  w.box(g,[6.4,1.46,1.4],[0,.93,1],'#8d9c83','wood');
+  for(let n=0;n<14;n++)w.box(g,[.024,1.36,.02],[-3+n*.46,.94,1.72],'#696b52','wood');
+  for(const [era,objects] of this.eras.entries()){
+   objects.userData.animationRoot=true;objects.name='mianwo-era-'+(era?'present':'past');
+   w.sign(objects,era?'面 窝 · 早 食':'现 炸 面 窝',5.9,.88,[0,4.76,1.21],era?'#658e88':'#9a8055','#f2e4bf',era?'旧 勺 还 在 · 清 晨 接 着 开 门':'厚 边 薄 心 · 早 起 一 口');
+   for(let i=0;i<12;i++){const awning=w.box(objects,[.69,.045,2.2],[-3.8+i*.69,4.07,1.43],i%2?'#eee0c2':era?'#8dafad':'#b9a172','cloth');awning.rotation.x=.16;w.box(objects,[.69,.27,.03],[-3.8+i*.69,3.78,2.53],i%2?'#eee0c2':era?'#8dafad':'#b9a172','cloth');}
+   w.box(objects,[6.68,.12,1.64],[0,1.73,1],era?'#b9cdc3':'#b99773',era?'metal':'wood');
+   w.sign(objects,era?'自带餐盒 · 趁热吃':'一口酥香',2.0,.45,[1.65,1.07,1.73],era?'#d8e3d0':'#e8d7b1','#63715b');
+   if(era){
+    w.box(objects,[1.85,.12,1.28],[-1.13,1.87,1],'#637e77','metal');
+    for(let i=0;i<3;i++)w.box(objects,[.58,.15,.46],[2.1,1.9+i*.16,1.24],'#e1d7b9');
+    w.cylinder(objects,.3,.7,[2.75,2.17,.45],'#c0cdc6',24,'metal');
+   }else{
+    w.box(objects,[1.66,.27,1.1],[-1.13,1.93,1],'#817a61','stone');
+    w.cylinder(objects,.3,.54,[2.75,2.08,.45],'#a88c61',24,'wood');
+    w.box(objects,[.61,.41,.30],[2.1,2.0,1.20],'#d6c298');
+   }
+   w.batchStatic(objects);w.batchScenery(objects);
+  }
+  const counter=new T.Group();counter.position.set(0,0,1);g.add(counter);
+  const pan=w.mesh(counter,new T.SphereGeometry(.81,32,16,0,Math.PI*2,0,Math.PI/2),w.material('#626d61','metal'),[-1.13,2.13,-.03]);pan.rotation.x=Math.PI;pan.scale.y=.22;
+  w.cylinder(counter,.75,.012,[-1.13,2.07,-.03],'#b29450',32);
+  for(let j=0;j<5;j++){
+   const food=new T.Group();food.position.set(-1.48+(j%2)*.59,2.18,-.39+Math.floor(j/2)*.36);counter.add(food);
+   const rim=w.mesh(food,new T.TorusGeometry(.19,.083,8,22),w.material(j%2?'#c49350':'#d6ae62'));rim.rotation.x=-Math.PI/2;rim.scale.z=.65;
+   w.cylinder(food,.17,.013,[0,-.016,0],'#b99050',22);
+  }
+  w.line(counter,[V(-.4,2.13,-.1),V(.1,2.30,-.36),V(.35,2.35,-.45)],'#798b7a',.037);w.box(counter,[.1,.08,.40],[.35,2.37,-.53],'#a87850','wood');
+  for(let i=0;i<4;i++)w.cylinder(counter,.38,.065,[1.65,1.84+i*.075,.02],'#d8decc',28,'ceramic');
+  const steamParent=new T.Group();steamParent.userData.animationRoot=true;counter.add(steamParent);this.steam=makeSteam(w,steamParent,V(-1,2.23,0));
+  w.batchStatic(g);w.batchScenery(g);
  }
- update(time:number,camera:T.Camera){this.steam.forEach(s=>s.update(time,camera,true));}
+ update(time:number,camera:T.Camera,turn=0){
+  this.panels.forEach(p=>p.rotation.y=turn*Math.PI);this.wall.position.z=-2.35-Math.sin(turn*Math.PI)*1.2;
+  this.eras.forEach((g,i)=>{g.visible=(turn<.5?i===0:i===1);g.scale.y=.96+.04*Math.abs(Math.cos(turn*Math.PI));});
+  this.steam.update(time,camera,true);this.steam.meshes.forEach(m=>m.material.uniforms.strength.value=.30*Math.pow(Math.abs(Math.cos(turn*Math.PI)),4));
+  if(this.host){this.host.dataset.mianwoEra=turn>=.5?'present':'past';this.host.dataset.mianwoWallAngle=(turn*180).toFixed(1);}
+ }
 }
